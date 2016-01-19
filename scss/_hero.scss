@@ -1,0 +1,45 @@
+//  Foundation for Sites Hero
+//  -----------------------------
+//
+
+.hero {
+	background-image: url($hero-background);
+  background-size: cover;
+  padding-top: 3rem;
+
+  @include breakpoint(medium) {
+  	background-image: url($hero-background-large);
+  	padding: 2rem;
+  }
+
+  blockquote {
+    margin-bottom: $global-margin*5;
+    margin-left: 36%;
+
+    @include breakpoint(medium) {
+      margin-left: 12%;
+    }
+    @include breakpoint(large) {
+      margin-left: 60%;
+      margin-top: $global-margin*2;
+    }
+  }
+
+  .hero-logo {
+    @include breakpoint(large only) {
+      margin-bottom: $global-margin*7;
+    }
+  }
+
+  .callout {
+    margin-top: $global-margin*2;
+
+  	@include breakpoint(medium) {
+  		margin-top: $global-margin*3;
+  	}
+  	@include breakpoint(large) {
+  		margin-top: $global-margin*3;
+      margin-bottom: $global-margin*3;
+  	}
+  }
+}
