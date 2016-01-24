@@ -1,51 +1,49 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The 9:20 Special</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 9:20 Special - Swing Dancing in San Francisco</title>
+    <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
+ <body>
     
     <!-- Top Navigation -->
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name"><a href="#">9:20 Special"</a></li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-        <section class="top-bar-section">
-        <ul class="right">
-          <li><a href="../classes.html">Classes</a></li>
-          <li><a href="../dance.html">Dance</a></li>
-          <li><a href="../music.html">Music</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../register.html">Register</a></li>
+    <div class="title-bar" data-responsive-toggle="top-level-nav" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <nav class="top-bar align-middle" data-topbar role="navigation" id="top-level-nav">
+      <div class="top-bar-left show-for-medium">
+        <ul class="menu">
+          <li><a href="#" style="padding: 0 0 0 16px;"><img src="img/header-logo.png" alt="9:20 Special Logo" style="max-height: 40px"></a></li>
         </ul>
-      </section>
+      </div>
+      <div class="top-bar-right">
+        <ul class="dropdown menu vertical medium-horizontal">
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="dance.html">Dance</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><button type="button" class="button" href="register.html">Register</button></li>
+        </ul>
+      </div>
     </nav>
     
-    <div class="container-fluid">
-      <div class="col-lg-12 col-md-12 col">
-        <div class="panel">
+    <div class="content">
           
           <!-- Hero Section -->
-          <div class="row">
-            
-            <div >
-              <h1>Spreading the joy of Lindy Hop</h1>
+          <div class="row align-right hero">
+            <div class="align-bottom align-right callout large-4 medium-6 small-10 column">
+              <h3>Spreading the joy of Lindy Hop</h3>
               <p>Class series are $55 each if <a href="#">purchased online</a> by midnight of the Tuesday before the first class meeting. If you sign up at the door, our class series are $60 each.</p>
-              <ul>
-              <li> $45/$50 for 3 week months</li>
-              <li> $55/$60 for 4 week months</li>
-              <li> $65/$70 for 5 week months</li>
-              </ul>
-             <p>The dance party is <strong>free</strong> with the purchase of any class.</p>
+              <button class="button large">Register Now</button>
             </div>
           </div>
           
-<!-- Lindy 1 -->
+          <!-- Lindy 1 -->
           <div>
                 <header>
                   <h3>Lindy 1 &ndash; For Beginners</h3>
@@ -157,16 +155,37 @@
               </div>   
               </div> 
 
-        
 
+      <!-- Footer -->
+      <footer class="row">
+        <div class="small-12 medium-6 large-4 column">
+          <a href=""><img src="img/hero-logo.png"></a></p>
         </div>
-      </div>
+        <div class="small-12 medium-6 large-4 column">
+          <a href="">Russian Center<br>2460 Sutter St.<br>San Francsico, CA 94115</a><br><a href="mailto:info@920special.com">info@920special.com</a></p>
+        </div>
+        <div class="small-12 medium-4 large-2 column">
+          <ul class="inline">
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+          </ul>
+        </div>
+        <nav class="row">
+          <ul class="small-12 medium-8 large-4 column">
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="dance.html">Dance</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+      </footer>
+
     </div>
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
