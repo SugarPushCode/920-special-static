@@ -71,7 +71,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-$row-background: $light-gray;
+$content-background: $white;
 $row-padding: $global-padding;
 $rem-base: 16px;
 
@@ -143,7 +143,7 @@ $code-padding: rem-calc(2 5 1);
 $anchor-color: $secondary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
-$anchor-text-decoration-hover: underline;
+$anchor-text-decoration-hover: none;
 $anchor-font-family: 'UniversBlack', Univers-Black, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $hr-width: $global-width;
 $hr-border: 1px solid $medium-gray;
@@ -266,7 +266,7 @@ $buttongroup-expand-max: 6;
 $callout-background: $light-gray;
 $callout-background-fade: 0%;
 $callout-border: none;
-$callout-margin: 0 0 0 0;
+$callout-margin: ;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
 $callout-font-color-alt: $body-background;
@@ -559,3 +559,9 @@ $hero-background-large: '../img/hero-background-large.png';
 
 $header-padding: $global-padding;
 $header-margin: $global-margin;
+
+// 38. Footer
+// ----------
+
+$footer-background: '../img/footer-background.png';
+$footer-background-large: '../img/footer-background-large.png';

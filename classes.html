@@ -10,27 +10,29 @@
  <body>
     
     <!-- Top Navigation -->
-    <div class="title-bar" data-responsive-toggle="top-level-nav" data-hide-for="medium">
+    <div class="title-bar" data-responsive-toggle="top-level-nav" data-hide-for="medium" data-sticky data-options="marginTop:0;" style="width:100%;">
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">Menu</div>
     </div>
 
-    <nav class="top-bar align-middle" data-topbar role="navigation" id="top-level-nav">
-      <div class="top-bar-left show-for-medium">
-        <ul class="menu">
-          <li><a href="#" style="padding: 0 0 0 16px;"><img src="img/header-logo.png" alt="9:20 Special Logo" style="max-height: 40px"></a></li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="dropdown menu vertical medium-horizontal">
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="dance.html">Dance</a></li>
-          <li><a href="music.html">Music</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><button type="button" class="button" href="register.html">Register</button></li>
-        </ul>
-      </div>
-    </nav>
+    <div data-sticky-container>
+      <nav class="top-bar align-middle align-center" data-topbar role="navigation" id="top-level-nav" data-sticky data-options="marginTop:0;" style="width:100%; background-color: #F0F6F7;">
+        <div class="top-bar-left show-for-medium">
+          <ul class="menu">
+            <li><a href="index.html" style="padding: 0 0 0 16px;"><img src="img/header-logo.png" alt="9:20 Special Logo" style="max-height: 40px"></a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu vertical medium-horizontal">
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="dance.html">Dance</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><button type="button" class="button" href="register.html">Register</button></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     
     <div class="content">
           
@@ -155,30 +157,30 @@
               </div>   
               </div> 
 
-
       <!-- Footer -->
-      <footer class="row">
-        <div class="small-12 medium-6 large-4 column">
-          <a href=""><img src="img/hero-logo.png"></a></p>
+      <footer class="row align-top align-left">
+        <div class="small-10 small-offset-1 order-1 medium-4 medium-order-1 large-3 large-order-1 column">
+          <a href="index.html"><img src="img/hero-logo.png"></a>
         </div>
-        <div class="small-12 medium-6 large-4 column">
-          <a href="">Russian Center<br>2460 Sutter St.<br>San Francsico, CA 94115</a><br><a href="mailto:info@920special.com">info@920special.com</a></p>
+        <div class="small-7 order-2 medium-3 medium-order-2 large-3 large-order-2 column">
+          <a href="">Russian Center<br>2460 Sutter St.<br>San Francsico, CA 94115</a><br><a href="mailto:info@920special.com">info@920special.com</a>
         </div>
-        <div class="small-12 medium-4 large-2 column">
-          <ul class="inline">
-            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+        <div class="small-6 order-3 medium-1 medium-order-2 large-1 large-order-3 column">
+          <ul class="menu medium-vertical social">
+            <li><a href=""><img src="img/icons/facebook-square.svg" alt="9:20 Special on Facebook"></a></li>
+            <li><a href=""><img src="img/icons/twitter-square.svg" alt="9:20 Special on Twitter"></a></li>
+            <li><a href=""><img src="img/icons/youtube-square.svg" alt="9:20 Special on YouTube"></a></li>
           </ul>
         </div>
-        <nav class="row">
-          <ul class="small-12 medium-8 large-4 column">
+        <nav class="small-12 order-4 medium-2 medium-order-4 large-2 large-order-4 column">
+          <ul class="menu vertical">
             <li><a href="classes.html">Classes</a></li>
             <li><a href="dance.html">Dance</a></li>
             <li><a href="music.html">Music</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="register.html">Register</a></li>
           </ul>
+        </nav>
       </footer>
 
     </div>

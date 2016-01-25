@@ -2,14 +2,19 @@
 
 @import 'settings';
 @import 'fonts';
+@import 'navigation-override';
+@import 'type-override';
 @import 'foundation';
 @import 'motion-ui';
 @import 'hero';
+@import 'footer';
 @import 'headers';
+@import 'content';
 
 @include foundation-global-styles;
 @include foundation-flex-grid;
 @include foundation-typography;
+@include foundation-typography-override;
 @include foundation-button;
 @include foundation-forms;
 @include foundation-visibility-classes;

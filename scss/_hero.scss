@@ -14,19 +14,16 @@
 
   blockquote {
     margin-bottom: $global-margin*5;
-    margin-left: 36%;
 
     @include breakpoint(medium) {
-      margin-left: 12%;
     }
     @include breakpoint(large) {
-      margin-left: 60%;
       margin-top: $global-margin*2;
     }
   }
 
   .hero-logo {
-    @include breakpoint(large) {
+    @include breakpoint(medium) {
       margin-bottom: $global-margin*7;
     }
   }

@@ -6,4 +6,19 @@ header {
 	padding-left: $header-padding;
 	padding-top: $header-padding;
 	padding-bottom: 0 !important;
+	margin-top: $global-margin;
+
+	border-top: 8px solid $black;
+
+	h2 {
+		text-transform: $header-text-transform;
+	}
+}
+
+.inverse {
+	background-color: $black;
+	color: $light-gray;
+	border-top: none;
+	margin-bottom: $global-margin;
+	margin-top: 0;
 }
