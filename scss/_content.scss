@@ -9,3 +9,11 @@
 .row {
   
 }
+
+ul.image-grid {
+	list-style: none;
+	margin-left: 0;
+	li {
+		display: inline-block;
+	}
+}
