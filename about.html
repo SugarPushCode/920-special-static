@@ -37,23 +37,27 @@
     
     <div class="content">
           
-          <!-- Hero Section -->
-          <div class="row align-right hero">
-            <div class="align-bottom order-2 large-4 medium-6 small-12 column clearfix">
-              <img src="img/hero-logo.png" alt="Thursday Nights at 2460 Sutter St, 9:20 Special" class="hero-logo float-center">
-            </div>
-            <div class="large-4 medium-5 small-10 column">
-              <h1>Spreading the Joy of Lindy Hop.</h1>
-            </div>
-          </div>
-          
+      <!-- Hero Section -->
+      <div class="row align-spaced hero">
+        <div class="align-top order-1 large-12 medium-12 small-12 column">
+          <blockquote class="column small-8 small-offset-3 medium-5 medium-offset-7 large-3 large-offset-7">There are shortcuts to happiness, and dancing is one of them.</blockquote>
+        </div>
+        <div class="align-bottom order-2 large-4 medium-6 small-12 column clearfix">
+          <img src="img/hero-logo.png" alt="Thursday Nights at 2460 Sutter St, 9:20 Special" class="hero-logo float-center">
+        </div>
+        <div class="align-bottom order-3 callout large-4 medium-5 small-10 column">
+          <h3>Spreading the joy of Lindy Hop</h3>
+          <p>The 9:20 Special is the largest and longest running Lindy Hop venue in the San Francisco Bay Area and is known by Lindy Hoppers around the world.</p>
+        </div>
+      </div>
+
           <!-- About the 920 -->
           <header class="row inverse">
             <h2>About the 920 Special</h2>
           </header>
           <div class="row">
             <div class="small-12 column">
-              <p> The 9:20 Special is the largest and longest running Lindy Hop venue in the San Francisco Bay Area and is known by Lindy Hoppers around the world. Offering classes and social dancing every Thursday night, The 9:20 Special brings 200+ dancers to the dance floor each week and prides itself as a friendly, fun, welcoming venue.</p>
+              <p>The 9:20 Special is the largest and longest running Lindy Hop venue in the San Francisco Bay Area and is known by Lindy Hoppers around the world. Offering classes and social dancing every Thursday night, The 9:20 Special brings 200+ dancers to the dance floor each week and prides itself as a friendly, fun, welcoming venue.</p>
               <p>Join us on Thursdays for classes ranging in level from total beginner to advanced, followed by a dance party in our big, beautiful ballroom.</p>
               <p> We can't wait to dance with you!</p>
             </div>
@@ -94,21 +98,57 @@
             </div>
           </div>
 
-          <!-- About Us Links -->
-          <div class="row">
-         	 <div class="small-12 medium-6 large-3 column">
-          	  <a href="instructors.html"><img src="img/hero/instructors.jpg">Our Instructors</a>
-         	 </div>
-            <div class="small-12 medium-6 large-3 column">
-              <a href=""><img src="img/hero/djs.jpg">Our DJs</a>
-            </div>
-            <div class="small-12 medium-6 large-3 column">
-              <a href=""><img src="img/hero/ourstaff.jpg">Our Staff</a>
-            </div>
-           	<div class="small-12 medium-6 large-3 column">
-          	  <a href=""><img src="img/hero/volunteers.jpg">Our Volunteers</a>
-          	</div>
+      <!-- About Us Links -->
+      <section class="row">
+        <div class="small-12 medium-6 large-3 column">
+          <a href="instructors.html"><img src="img/hero/instructors.jpg">Our Instructors</a>
+        </div>
+        <div class="small-12 medium-6 large-3 column">
+          <a href="music.html#djs"><img src="img/hero/djs.jpg">Our DJs</a>
+        </div>
+        <div class="small-12 medium-6 large-3 column">
+          <a href="staff.html"><img src="img/hero/ourstaff.jpg">Our Staff</a>
+        </div>
+        <div class="small-12 medium-6 large-3 column">
+          <a href="volunteers.html"><img src="img/hero/volunteers.jpg">Our Volunteers</a>
+        </div>
+      </section>
+
+      <!-- More Info -->
+      <header class="row inverse">
+        <h2>More Information</h2>
+      </header>
+      <section class="row align-spaced">
+        <div class="small-12 medium-6 large-4 column" id="parking">
+          <h3>Parking</h3>
+          <p>Street parking is available within a few blocks walk. In general, you'll find more parking east of Divisadero. Broderick is a smaller street with a large housing project and less available parking. Try parking on Bush, Post, Scott or Pierce.</p>
+          <p>While the neighborhood is fairly safe, it’s still a big city and walking anywhere at night by yourself may not be the wisest decision. If you ever feel uncertain about returning to your car alone, please ask at the front desk and we will be happy to find an escort to walk you to your car.</p>
+        </div>
+        <div class="small-12 medium-6 large-4 column" id="volunteering">
+          <h3>Volunteering</h3>
+          <p>The 9:20 Special is run by a dedicated group of staff and volunteers. By volunteering with us (sitting a door shift, or helping to setup/cleanup), you not only have the opportunity to get free dance admission/classes and discounts, but you also get to become part of our fun team and community!</p>
+          <p>If you would like to volunteer, or have any questions about volunteering, please email us at <a href="mailto:volunteer@920special.com">volunteer@920special.com</a>.</p>
+        </div>
+      </section>
+      <header class="row">
+        <h2>Contact Us</h2>
+      </header>
+      <section class="row">
+        <form class="column">
+          <div class="column small-12 medium-6 large-4">
+            <label for="name">Your Name:</label><input type="text" id="name">
+            <label for="email">Your Email:</label><input type="email" id="email">
+            <label for="reason">Why are you reaching out to us?</label>
+            <input type="select" id="reason">
+              <option>General</option>
+              <option>Volunteering</option>
+              <option>Private Lessons</option>
+            </input>
+            <label for="message">Your Message:</label>
+            <input type="textfield" id="message">
           </div>
+        </form>
+      </section>
 
       <!-- Footer -->
       <footer class="row align-top align-left">
