@@ -172,6 +172,14 @@ ul.image-grid {
     width: 100%;
     height: 100%; }
 
+.week {
+  border: solid 2px #f1f1f1; }
+  .week h4 {
+    padding-top: 1rem; }
+
+.week:nth-child(2n) {
+  background-color: #f1f1f1; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
    * 1. Set default font family to sans-serif.

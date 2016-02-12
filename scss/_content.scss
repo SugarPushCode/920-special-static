@@ -35,3 +35,15 @@ ul.image-grid {
 		height: 100%;
 	}
 }
+
+
+.week {
+	border: solid 2px darken($content-background, 5%);
+	h4 {
+		padding-top: $global-padding;
+	}
+}
+
+.week:nth-child(2n) {
+	background-color: darken($content-background, 5%);
+}
