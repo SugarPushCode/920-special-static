@@ -18,6 +18,9 @@ ul.image-grid {
 	margin-left: 0;
 	li {
 		display: inline-block;
+		img {
+			object-fit: cover;
+		}
 	}
 }
 
@@ -31,4 +34,12 @@ ul.image-grid {
 
 .week:nth-child(2n) {
 	background-color: darken($content-background, 5%);
+}
+
+.newsletter {
+	color: $white;
+
+	@include breakpoint(medium) {
+		margin-top: -108px;
+	}
 }

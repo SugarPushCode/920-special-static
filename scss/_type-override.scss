@@ -118,6 +118,10 @@ $blockquote-border: none !default;
     img {
       border: 0;
     }
+    .button {
+      font-family: $body-font-family;
+      font-weight: $global-weight-normal;
+    }
   }
 
   // Blockquotes
