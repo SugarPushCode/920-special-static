@@ -1,4 +1,4 @@
 {
   "name": "9:20 special",
-  "image": "heroku/cedar:14"
+  "image": "northisup/920-special-static"
 }
