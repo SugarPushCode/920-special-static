@@ -1,1 +1,1 @@
-web: bin/start-nginx gunicorn --workers=3 --threads=20 --log-file - wsgi:application
+web: bin/start-nginx uwsgi --uid=nobody --socket=/tmp/uwsgi.sock --wsgi-file=wsgi.py --chmod-socket=666
