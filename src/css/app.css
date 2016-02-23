@@ -79,7 +79,7 @@
   padding-top: 3rem; }
   @media screen and (min-width: 40em) {
     .hero {
-      background-image: url("../img/hero-background-large.jpg");
+      background-image: url("../img/hero-background-large-compressed.jpg");
       padding: 2rem; } }
   .hero blockquote {
     margin-bottom: 5rem; }

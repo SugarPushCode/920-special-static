@@ -1,1 +1,2 @@
-web: bin/wrapper.sh
+web: FORCE=0 bin/start-nginx uwsgi --uid=nobody --socket=/tmp/uwsgi.sock --wsgi-file=wsgi.py --chmod-socket=666
+

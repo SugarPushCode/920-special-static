@@ -89,8 +89,8 @@ RUN pip install --no-cache-dir uwsgi==$PYTHON_UWSGI_VERSION
 COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY nginx/sites-enabled/ /etc/nginx/sites-enabled/
+COPY config/nginx.conf /etc/nginx/nginx.conf
+COPY config/sites-enabled/ /etc/nginx/sites-enabled/
 COPY entrypoint.sh /usr/src/app/entrypoint.sh
 
 COPY ./src /usr/src/app
