@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 9:20 Special - Swing Dancing in San Francisco</title>
+    <link rel="stylesheet" href="..//static/css/app.css">
+  </head>
+ <body>
+
+    {% block nav %}{% include 'base/nav.jinja' %}{% endblock %}
+    <div class="content">
+        {% block content %}{% endblock %}
+        {% block footer %}{% include 'base/foot.jinja' %}{% endblock %}
+    </div>
+
+    <script type='text/javascript'>
+       var localizedErrMap = {};
+       localizedErrMap['required'] =    'This field is required.';
+       localizedErrMap['ca'] =      'An unexpected error occurred while attempting to send email.';
+       localizedErrMap['email'] =       'Please enter your email address in name@email.com format.';
+       localizedErrMap['birthday'] =    'Please enter birthday in MM/DD format.';
+       localizedErrMap['anniversary'] =   'Please enter anniversary in MM/DD/YYYY format.';
+       localizedErrMap['custom_date'] =   'Please enter this date in MM/DD/YYYY format.';
+       localizedErrMap['list'] =      'Please select at least one email list.';
+       localizedErrMap['generic'] =     'This field is invalid.';
+       localizedErrMap['shared'] =    'Sorry, we could not complete your sign-up. Please contact us to resolve this.';
+       localizedErrMap['state_mismatch'] = 'Mismatched State/Province and Country.';
+       localizedErrMap['state_province'] = 'Select a state/province';
+       localizedErrMap['selectcountry'] =   'Select a country';
+       var postURL = 'https://visitor2.constantcontact.com/api/signup';
+    </script>
+    <script type='text/javascript' src='https/static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
+    <script src="..//static/js/app.js"></script>
+  </body>
+</html>

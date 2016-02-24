@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -x
 
-sed -i "s/__PORT__/${PORT}/g" /etc/nginx/sites-enabled/default
+echo `bin/nginx -V`
 
 if [ $# -eq 0 ] ; then
-    exec nginx-and uwsgi --uid=nobody --socket=/tmp/uwsgi.sock --wsgi-file=wsgi.py --chmod-socket=666
+    exec bin/start-nginx uwsgi --uid=nobody --ini=config/uwsgi.ini --wsgi=lindy.special920.wsgi:application
 else
     exec "$@"
 fi
