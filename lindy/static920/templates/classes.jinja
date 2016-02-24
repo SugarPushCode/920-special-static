@@ -7,7 +7,7 @@
           <blockquote class="column small-8 small-offset-3 medium-5 medium-offset-7 large-3 large-offset-7">There are shortcuts to happiness, and dancing is one of them.</blockquote>
         </div>
         <div class="align-bottom order-2 large-4 medium-6 small-12 column clearfix">
-          <img src="/static/img/hero-logo.png" alt="Thursday Nights at 2460 Sutter St, 9:20 Special" class="hero-logo float-center">
+          <img src="static/img/hero-logo.png" alt="Thursday Nights at 2460 Sutter St, 9:20 Special" class="hero-logo float-center">
         </div>
         <div class="align-bottom order-3 callout large-4 medium-5 small-10 column">
           <h3>Spreading the joy of Lindy Hop</h3>
@@ -32,14 +32,14 @@
 
             <div class="media-object-section">
               <div class="reveal large" id="class-progression" data-reveal style="display: none;">
-                <img src="/static/img/class-progression.jpg" alt="Our Class Progression. Lindy 1 (8-Count, 6-Count, Charleston) then Lindy 2 (Swing Outs, California Routine, Charleston 2, Classics) then Lindy 3 (Technique, Musicality, Beyond Lindy Hop, Vocabulary), and Solo Jazz">
+                <img src="static/img/class-progression.jpg" alt="Our Class Progression. Lindy 1 (8-Count, 6-Count, Charleston) then Lindy 2 (Swing Outs, California Routine, Charleston 2, Classics) then Lindy 3 (Technique, Musicality, Beyond Lindy Hop, Vocabulary), and Solo Jazz">
                 <button class="close-button" data-close aria-label="Close" type="button">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
 
               <a data-toggle="class-progression" alt="Open class progression chart">
-                <img src="/static/img/class-progression-thumbnail.jpg" alt="class progression thumbnail">
+                <img src="static/img/class-progression-thumbnail.jpg" alt="class progression thumbnail">
               </a>
             </div>
 
@@ -140,23 +140,9 @@
             <p>The 9:20 Special is home to a passionate group of instructors who have won numerous competitions, traveled internationally to teach, and love to share the joy of Lindy Hop with our students. Our team of world class instructors is focused on preserving the history of authentic Lindy Hop while fostering a creative, dynamic learning environment.</p>
           </div>
           <ul class="row collapse image-grid">
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/iristarou.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Iris Tarou"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/kirktarou.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Kirk Tarou"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/manusmith.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Manu Smith"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/annmony.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Ann Mony"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/nicolezuckerman.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Nicole Zuckerman"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/shannonleawatkins.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Shannon Lea Watkins"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/jessicaboddicker.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Jessica Boddicker"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/ellenhuffman.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Ellen Huffman"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/juliafarrel.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Julia Farrell"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/jessking.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Jessica King"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/jeanpalamountain.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Jean Palamountain"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/ryancalloway.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Ryan Calloway"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/carlnelson.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Carl Nelson"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/douglasmatthews.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Douglas Matthews"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/zainmemoin.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Zain Memoin"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/bromleypalamountain.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Bromley Palamountain"></li>
-            <li class="small-4 medium-3 column"><img src="/static/img/instructor/kevinweng.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="Kevin Weng"></li>
+              {% for teacher in teachers %}
+                <li class="small-4 medium-3 column"><img src="static/img/instructor/{{ teacher.img }}.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="{{ teacher.name }}"></li>
+              {% endfor %}
           </ul>
         </section>
 
