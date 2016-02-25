@@ -141,7 +141,7 @@
           </div>
           <ul class="row collapse image-grid">
               {% for teacher in teachers %}
-                <li class="small-4 medium-3 column"><img src="static/img/instructor/{{ teacher.img }}.jpg" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="{{ teacher.name }}"></li>
+                <li class="small-4 medium-3 column"><img src="{{ teacher.img }}" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="{{ teacher.name }}"></li>
               {% endfor %}
           </ul>
         </section>
