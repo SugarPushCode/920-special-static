@@ -4,4 +4,4 @@ bower_components
 *.pyc
 __cache__
 *.sqlite3
-static
+/static

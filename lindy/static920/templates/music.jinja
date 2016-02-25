@@ -62,14 +62,9 @@
           <p>Our team of world class DJs is focused on sharing the history of jazz music while fostering a creative, dynamic dance environment.</p>
         </div>
         <ul class="row collapse image-grid">
-          <li class="small-4 medium-3 column"><img src="static/img/dj/allenkerr.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Allen Kerr - Head DJ"></li>
-          <li class="small-4 medium-3 column"><img src="static/img/dj/manusmith.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Manu Smith"></li>
-          <li class="small-4 medium-3 column"><img src="static/img/dj/nicolezuckerman.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Nicole Zuckerman"></li>
-          <li class="small-4 medium-3 column"><img src="static/img/dj/alexfernandez.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Alex Fernandez"></li>
-          <li class="small-4 medium-3 column"><img src="static/img/dj/dhruvbarghava.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Dhruv Bhargava"></li>
-          <li class="small-4 medium-3 column"><img src="static/img/dj/nathandias.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Nathan Dias"></li>
-          <li class="small-4 medium-3 column"><img src="static/img/dj/hepjen.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Hep Jen"></li>
-          <li class="small-4 medium-3 column"><img src="static/img/dj/arnoldcabreza.jpg" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Arnold Cabreza"></li>
+            {% for dj in djs %}
+              <li class="small-4 medium-3 column"><img src="{{ dj.img }}" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="{{ dj.name }}"></li>
+            {% endfor %}
         </ul>
       </section>
 
