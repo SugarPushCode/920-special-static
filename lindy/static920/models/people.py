@@ -80,8 +80,8 @@ PEOPLE = {person.slug: person for person in people}
 TEACHERS = map(PEOPLE.get, teachers)
 DJS = map(PEOPLE.get, djs)
 
-DJ1 = 'nicolezuckerman'
-DJ2 = 'allenkerr'
+DJ1 = 'jessking'
+DJ2 = 'hepjen'
 
 THIS_WEEK = {
     'dj1': PEOPLE[DJ1],
