@@ -1,0 +1,60 @@
+{% extends "base/base.jinja" %}
+
+{% block content %}
+
+
+      <!-- Hero Section -->
+      <div class="row align-spaced hero">
+        <div class="align-top order-1 large-12 medium-12 small-12 column">
+          <blockquote class="column small-8 small-offset-3 medium-5 medium-offset-7 large-3 large-offset-7">Jazz speaks for life. This is triumphant music.<br>&mdash; Martin L. King, Jr.</blockquote>
+        </div>
+        <div class="align-bottom order-2 large-4 medium-6 small-12 column clearfix">
+          <img src="static/img/hero-logo.png" alt="Thursday Nights at 2460 Sutter St, 9:20 Special" class="hero-logo float-center">
+        </div>
+        <div class="align-bottom order-3 callout large-4 medium-5 small-10 column">
+          <h3>Swing Jazz Music</h3>
+          <p>At the 9:20 Special we love the tradition of modern and vintage swing jazz music.</p>
+          <a type="button" class="button large expanded" href="https://open.spotify.com/user/1227107218/playlist/22ydrXE0VK6I8rFj868Kxr">Listen on Spotify</a>
+        </div>
+      </div>
+
+          <!-- Featured Playlist -->
+
+          <header class="row inverse">
+            <h2>Music at the 9:20 Special</h2>
+          </header>
+          <section class="row">
+            <div class="column small-12">
+              <div class="media-object stack-for-small">
+                <div class="media-object-section">
+                  <p>Swing music is a style of jazz that was dominant in the 1930s, and performed by jazz big bands primarily for dancing audiences. It reached broad audiences over the radio, on records, and in dance halls around the nation.</p>
+
+                  <p>Swing music is characterized by a syncopated rhythm where all the beats are not evenly spaced in time. Some beats will fall slightly before, or slightly after the expected time of when a straight beat would have landed. Familiar songs with this swing rhythm are Benny Goodman’s “Sing Sing Sing” and Duke Ellington’s “It Don’t Mean A Thing If It Ain’t Got That Swing”.</p>
+
+                  <p>The syncopated swing rhythm made the music sound more lively, and also had the psychological effect of causing listeners to want to move with the music. The Charleston was a dance that was quite popular during the 1920s, and as jazz music took on stronger syncopations, the music began influencing how the dancers danced their dance. This caused a feedback with the live bands who would begin playing their music influenced by how the dancers in front of them were dancing. By the end of the '20s, this feedback between live bands and dancers evolved both the music and the dance into new forms: swing jazz (also called "swing music" or "big band jazz"), Lindy Hop (also called "swing dancing" or "the Jitterbug").</p>
+
+                  <p><strong>Some Popular Swing Musicians to know are:</strong> Fletcher Henderson, Louis Armstrong, Coleman Hawkins, Count Basie, Johnny Hodges, Art Tatum, Ben Webster, Lester Young, and Roy Eldridge. And don’t forget the ladies: Ivy Benson, Blanche Calloway (Cab Calloway’s sister) and Ella Fitzgerald who led the Chick Webb Orchestra at the Savoy Ballroom.</p>
+                </div>
+                <div class="media-object-section">
+                  <h3>Listen on Spotify</h3>
+                  <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1227107218%3Aplaylist%3A22ydrXE0VK6I8rFj868Kxr" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                </div>
+            </div>
+          </section>
+
+      <!-- 9:20 Special DJs -->
+      <header class="row" id="djs">
+        <h2>Our DJs</h2>
+      </header>
+      <section class="row">
+        <div class="column small-12">
+          <p>Our team of world class DJs is focused on sharing the history of jazz music while fostering a creative, dynamic dance environment.</p>
+        </div>
+        <ul class="row collapse image-grid">
+            {% for dj in djs %}
+              <li class="small-4 medium-3 column"><img src="{{ dj.img }}" data-tooltip aria-haspopup="true" data-disable-hover='false' tabindex=1 title="{{ dj.name }}"></li>
+            {% endfor %}
+        </ul>
+      </section>
+
+{% endblock %}

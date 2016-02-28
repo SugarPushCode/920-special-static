@@ -1,0 +1,48 @@
+//  Foundation for Sites Footer
+//  -----------------------------
+//
+
+footer {
+	background-image: url($footer-background);
+  background-size: cover;
+  padding-top: $global-padding*3;
+  padding-bottom: $global-padding*3;
+  text-align: center;
+
+  a {
+    font-family: $body-font-family;
+    color: $light-gray;
+
+  }
+  a:hover {
+      color: scale-color($light-gray, $lightness: -14%);
+  }
+
+  .social {
+    img {
+      min-width: 30px;
+    }
+  }
+
+  @include breakpoint(small only) {
+    @include flex-grid-row-align(center);
+
+    nav li > a {
+      font-size: 120%;
+      border-bottom: 1px solid $light-gray;
+    }
+    nav li:last-child > a {
+        border-bottom: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+  	background-image: url($footer-background-large);
+    text-align: left;
+
+    a {
+      font-size: 100%;
+    }
+  }
+
+}

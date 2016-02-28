@@ -1,0 +1,45 @@
+//  Foundation for Sites Content
+//  -----------------------------
+//
+
+.content {
+	background-color: $content-background;
+}
+
+.row {
+  .row {
+  	margin-left: 0 !important;
+  	margin-right: 0 !important;
+  }
+}
+
+ul.image-grid {
+	list-style: none;
+	margin-left: 0;
+	li {
+		display: inline-block;
+		img {
+			object-fit: cover;
+		}
+	}
+}
+
+
+.week {
+	border: solid 2px darken($content-background, 5%);
+	h4 {
+		padding-top: $global-padding;
+	}
+}
+
+.week:nth-child(2n) {
+	background-color: darken($content-background, 5%);
+}
+
+.newsletter {
+	color: $white;
+
+	@include breakpoint(medium) {
+		margin-top: -108px;
+	}
+}
