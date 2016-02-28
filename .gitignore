@@ -5,5 +5,8 @@ bower_components
 __cache__
 *.sqlite3
 /static
+<<<<<<< HEAD
 /venv
 get-pip.py
+=======
+>>>>>>> 93c9375f891ad3cf20976de07751bfb7f9015f84
