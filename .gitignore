@@ -1,3 +1,7 @@
 .idea
 node_modules
 bower_components
+*.pyc
+__cache__
+*.sqlite3
+/static
