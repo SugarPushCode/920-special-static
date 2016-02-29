@@ -1,3 +1,5 @@
 uwsgi
 Django<1.10
 jinja2
+django-pipeline==1.6.6
+libsass

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'pipeline',
     'lindy.static920',
 ]
 
@@ -73,6 +74,23 @@ TEMPLATES = [
         },
     },
 ]
+
+PIPELINE = {
+    'PIPELINE_ENABLED': True,
+    'COMPILERS': (
+        'pipeline.compilers.sass.SASSCompiler',
+    ),
+    'STYLESHEETS': {
+        'master': {
+            'source_filenames': (
+                'sass/app.scss',
+            ),
+            'output_filename': 'css/app.css',
+        },
+    },
+}
+SASS_BINARY = '/usr/bin/env sassc'
+
 
 WSGI_APPLICATION = 'lindy.special920.wsgi.application'
 
@@ -126,3 +144,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static')
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
