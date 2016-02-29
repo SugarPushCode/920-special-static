@@ -88,6 +88,8 @@ PIPELINE = {
             'output_filename': 'css/app.css',
         },
     },
+    'CSS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
+    'JS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
 }
 SASS_BINARY = '/usr/bin/env sassc'
 
