@@ -43,3 +43,13 @@ ul.image-grid {
 		margin-top: -108px;
 	}
 }
+
+.feedback {
+	color: $white;
+	@include breakpoint(large) {
+		margin-bottom: $global-padding;
+	}
+	.button {
+		margin: $global-margin $global-margin 0 0;
+	}
+}
