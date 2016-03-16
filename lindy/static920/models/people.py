@@ -42,6 +42,7 @@ people = (
     Person(name='Hep Jen', slug='hepjen',),
     Person(name='Arnold Cabreza', slug='arnoldcabreza',),
     Person(name='Nirav Sanghani', slug='niravsanghani',),
+    Person(name='Ben Nathan', slug='bennathan',),
 )
 
 teachers = (
@@ -74,6 +75,7 @@ djs = (
     'hepjen',
     'arnoldcabreza',
     'niravsanghani',
+    'bennathan',
 )
 
 
@@ -82,8 +84,8 @@ PEOPLE = {person.slug: person for person in people}
 TEACHERS = map(PEOPLE.get, teachers)
 DJS = map(PEOPLE.get, djs)
 
-DJ1 = 'hepjen'
-DJ2 = 'niravsanghani'
+DJ1 = 'bennathan'
+DJ2 = 'dhruvbarghava'
 
 THIS_WEEK = {
     'dj1': PEOPLE[DJ1],
