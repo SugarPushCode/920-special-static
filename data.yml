@@ -1,0 +1,55 @@
+djs:
+  - 'allenkerr'
+  - 'alexfernandez'
+
+news:
+  # - date: mm/dd/yyyy (optional)
+  #   name: name of the event
+  #   content: plain text description
+  #   hide: True or False (case sensitive, optional)
+  - date: 4/7/2016
+    name: Tamar Korn & Friends
+    content: Live music! Tamar Korn & Friends will be joining us from New York. We cannot wait to swingout to their swinging tunes! It's $15 at the door ($12 for students/senior/soldiers). If you're taking a series or Solo Jazz class, it's $5 for the dance. More details are on the Facebook event page.
+  - name: Level 4 has returned!
+    content: After a two-year hiatus, and back by popular demand, our Level 4 class starts up again this month. If you've been dancing Lindy Hop for a few years, have completed all months of Lindy 3, travel to dance, and practice frequently because you feel like there is so much for you to still work on, this class is for you. The group will be small to maximize direct feedback from the instructors. Teachers will bring their own special ideas to these classes so the series can be taken over and over again, and the classes will be tailored to the needs of the students. The focus of Level 4 is to uncover and work on the elements that are keeping you from being as expressive as you want to be when you dance. An audition is required to take this class. You can audition the first Thursday of the month at 7pm.
+  - date: 4/28/2016
+    name: Old School Night
+    content: "Save the Date for the next Old School Night at the 9:20 Special!!! 'Revival' attire encouraged but not required. The invitation is open to everyone old and new school, so please invite anyone you miss dancing with."
+    hide: True
+
+schedule:
+
+  7:20 PM:
+    Lindy 1:
+      instructors:
+        - Iris Tarou
+        - Jess King
+    Lindy 2:
+      instructors:
+        - Kirk Tarou
+        - Ellen Huffman
+    Lindy 4:
+      instructors:
+        - Ann Mony
+        - Gilles Bouvier
+
+  8:30 PM:
+    Lindy 1:
+      instructors:
+        - Kirk Tarou
+        - Ellen Huffman
+    Lindy 3:
+      instructors:
+        - Ann Mony
+        - Gilles Bouvier
+
+  9:00 PM:
+    Taster Class:
+      instructors:
+        - Iris Tarou
+        - Jess King
+
+  9:30 PM:
+    Solo Jazz:
+      instructors:
+        - Kevin Weng
