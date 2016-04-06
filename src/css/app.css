@@ -184,7 +184,7 @@ ul.image-grid {
     .feedback {
       margin-bottom: 1rem; } }
   .feedback .button {
-    margin: 1rem .5rem 0 0; }
+    margin: 1rem 1rem 0 0; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -2269,6 +2269,63 @@ body.is-reveal-open {
     max-width: none;
     margin-left: 0;
     border: 0; }
+
+.tabs {
+  margin: 0;
+  list-style-type: none;
+  background: #fefefe;
+  border: 1px solid #F0F6F7; }
+  .tabs::before, .tabs::after {
+    content: ' ';
+    display: table; }
+  .tabs::after {
+    clear: both; }
+
+.tabs.vertical > li {
+  width: auto;
+  float: none;
+  display: block; }
+
+.tabs.simple > li > a {
+  padding: 0; }
+  .tabs.simple > li > a:hover {
+    background: transparent; }
+
+.tabs.primary {
+  background: #D40D60; }
+  .tabs.primary > li > a {
+    color: #fefefe; }
+    .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
+      background: #c90c5b; }
+
+.tabs-title {
+  float: left; }
+  .tabs-title > a {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    line-height: 1;
+    font-size: 12px;
+    color: #D40D60; }
+    .tabs-title > a:hover {
+      background: #fefefe; }
+    .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+      background: #F0F6F7; }
+
+.tabs-content {
+  background: #fefefe;
+  transition: all 0.5s ease;
+  border: 1px solid #F0F6F7;
+  border-top: 0; }
+
+.tabs-content.vertical {
+  border: 1px solid #F0F6F7;
+  border-left: 0; }
+
+.tabs-panel {
+  display: none;
+  padding: 1rem; }
+  .tabs-panel.is-active {
+    display: block; }
 
 .thumbnail {
   border: solid 4px #fefefe;
