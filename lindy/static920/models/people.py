@@ -2,6 +2,7 @@
 
 from __future__ import absolute_import
 
+# Standard Library
 from collections import namedtuple
 
 _Person = namedtuple('Person', 'slug,name')
@@ -79,15 +80,12 @@ djs = (
 )
 
 
-PEOPLE = {person.slug: person for person in people}
+class People(dict):
+    def __getitem__(self, item):
+        item = item.replace(' ', '').lower()
+        return super(People, self).__getitem__(item)
+
+PEOPLE = People({person.slug: person for person in people})
 
 TEACHERS = map(PEOPLE.get, teachers)
 DJS = map(PEOPLE.get, djs)
-
-DJ1 = 'allenkerr'
-DJ2 = 'alexfernandez'
-
-THIS_WEEK = {
-    'dj1': PEOPLE[DJ1],
-    'dj2': PEOPLE[DJ2],
-}

@@ -4,3 +4,5 @@ futures
 uwsgi
 Django<1.10
 jinja2
+pyyaml
+django_jinja
