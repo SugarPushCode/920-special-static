@@ -18,11 +18,13 @@ import os
 # External Libraries
 import yaml
 from django_jinja.builtins import DEFAULT_EXTENSIONS
-
+from path import path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = (path(__file__).dirname() / '..').abspath()
+PROJECT_ROOT = (BASE_DIR / '..' ).abspath()
+print(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -110,7 +112,7 @@ WSGI_APPLICATION = 'lindy.special920.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -173,18 +175,20 @@ PIPELINE = {
     },
     'CSS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
     'JS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
-    # 'SASS_BINARY': 'python -m scss',
-    'SASS_ARGUMENTS': ' '.join('-I {}'.format(d) for d in (
-        os.path.join(BASE_DIR, '..', 'bower_components/foundation-sites/scss'),
-        os.path.join(BASE_DIR, '..', 'bower_components/motion-ui/src'),
+    'SASS_BINARY': PROJECT_ROOT / 'node_modules' / '.bin' / 'node-sass',
+    'SASS_ARGUMENTS': ' '.join('--include-path {}'.format(d) for d in (
+        PROJECT_ROOT / 'bower_components/foundation-sites/scss',
+        PROJECT_ROOT / 'bower_components/motion-ui/src',
     ))
 }
 
+print(PIPELINE)
+
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..', 'static'))
+STATIC_ROOT = PROJECT_ROOT / 'static'
 
-HACK_DB = yaml.load(open(os.path.join(BASE_DIR, '..', 'data.yml')))
+HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
 
 
 # from functools import partial
