@@ -19,6 +19,7 @@ import os
 import yaml
 from django_jinja.builtins import DEFAULT_EXTENSIONS
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -30,7 +31,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5@l^^lozn5d41x1iiotg#=!g#osewcc1mf8x4em&u-htb-9eae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', False)
+DEBUG = int(os.environ.get('DEBUG', False))
 
 ALLOWED_HOSTS = ['*', ]
 
@@ -46,6 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'lindy.static920',
+
+    'pipeline',
+    # 'djangobower',
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -68,6 +73,7 @@ TEMPLATES = [
         'OPTIONS': {
             'match_extension': '.jinja',
             'extensions': DEFAULT_EXTENSIONS + [
+                # 'pipeline.jinja2.PipelineExtension',
             ],
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -141,12 +147,48 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static')
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
 
+
+PIPELINE = {
+    'PIPELINE_ENABLED': True,
+    'COMPILERS': (
+        'pipeline.compilers.sass.SASSCompiler',
+    ),
+    'STYLESHEETS': {
+        'master': {
+            'source_filenames': (
+                'scss/app.scss',
+            ),
+            'output_filename': 'css/app.css',
+        },
+    },
+    # 'CSS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
+    # 'JS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
+    # 'SASS_BINARY': 'python -m scss',
+    'SASS_ARGUMENTS': ' '.join('-I {}'.format(d) for d in (
+        os.path.join(BASE_DIR, '..', 'bower_components/foundation-sites/scss'),
+        os.path.join(BASE_DIR, '..', 'bower_components/motion-ui/src'),
+    ))
+}
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '..', 'static'))
 
 HACK_DB = yaml.load(open(os.path.join(BASE_DIR, '..', 'data.yml')))
+
+
+# from functools import partial
+# import django.contrib.staticfiles.urls
+# from django.views.static import serve
+
+# django.contrib.staticfiles.urls.serve = partial(serve, document_root=STATIC_ROOT, show_indexes=True)
