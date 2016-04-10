@@ -1,0 +1,140 @@
+// Overrides Typography
+// - - - - - - - - - - - - - - -
+// These are styles applied to basic HTML tags, including:
+//   - Paragraphs <p>
+//   - Bold/italics <b> <strong> <i> <em>
+//   - Headings <h1>—<h6>
+//   - Anchors <a>
+//   - Blockquotes <blockquote>
+
+
+/// Default color for links.
+/// @type Color
+$anchor-color: $secondary-color !default;
+
+/// Default color for links on hover.
+/// @type Color
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%) !default;
+
+/// Default text deocration for links.
+/// @type String
+$anchor-text-decoration: none !default;
+
+/// Default text decoration for links on hover.
+/// @type String
+$anchor-text-decoration-hover: none !default;
+
+/// Text color of `<blockquote>` elements.
+/// @type Color
+$blockquote-color: $light-gray !default;
+
+/// Padding inside a `<blockquote>` element.
+/// @type Number | List
+$blockquote-padding: rem-calc(9 20 0 19) !default;
+
+/// Side border for `<blockquote>` elements.
+/// @type List
+$blockquote-border: none !default;
+
+
+@mixin foundation-typography-override {
+
+  // Emphasized text
+  em,
+  i {
+    font-style: italic;
+    font-family: $italic-font-family;
+    line-height: inherit;
+  }
+
+  // Strong text
+  strong,
+  b {
+    font-weight: $global-weight-bold;
+    font-family: $bold-font-family;
+    line-height: inherit;
+  }
+
+  // Small text
+  small {
+    font-size: $small-font-size;
+    line-height: inherit;
+  }
+
+   // Headings
+  h1,
+  h2,
+  h4,
+  h5,
+  h6 {
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    font-style: $header-font-style;
+    color: $header-color;
+    text-rendering: $header-text-rendering;
+    margin-top: 0;
+    margin-bottom: $header-margin-bottom;
+    line-height: $header-lineheight;
+
+    small {
+      color: $header-small-font-color;
+      line-height: 0;
+    }
+  }
+
+  h3 {
+    font-family: $header-alternative-font-family;
+    font-weight: $header-font-weight;
+    font-style: $header-font-style;
+    color: $header-color;
+    text-rendering: $header-text-rendering;
+    margin-top: 0;
+    margin-bottom: $header-margin-bottom;
+    line-height: $header-lineheight;
+
+    small {
+      color: $header-small-font-color;
+      line-height: 0;
+    }
+  }
+
+  // Links
+  a {
+    color: $anchor-color;
+    text-decoration: $anchor-text-decoration;
+    font-weight: $global-weight-bold;
+    font-family: $anchor-font-family;
+    line-height: inherit;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $anchor-color-hover;
+      @if $anchor-text-decoration-hover != $anchor-text-decoration {
+        text-decoration: $anchor-text-decoration-hover;
+      }
+    }
+
+    img {
+      border: 0;
+    }
+    .button {
+      font-family: $body-font-family;
+      font-weight: $global-weight-normal;
+    }
+  }
+
+  // Blockquotes
+  blockquote {
+    font-family: $blockquote-font-family;
+    font-size: $blockquote-font-size;
+    margin: 0 0 $paragraph-margin-bottom;
+    padding: $blockquote-padding;
+    border-#{$global-left}: $blockquote-border;
+
+    &, p {
+      line-height: $paragraph-lineheight;
+      color: $blockquote-color;
+    }
+  }
+}
