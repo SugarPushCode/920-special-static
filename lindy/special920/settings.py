@@ -171,8 +171,8 @@ PIPELINE = {
             'output_filename': 'css/app.css',
         },
     },
-    # 'CSS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
-    # 'JS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
+    'CSS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
+    'JS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
     # 'SASS_BINARY': 'python -m scss',
     'SASS_ARGUMENTS': ' '.join('-I {}'.format(d) for d in (
         os.path.join(BASE_DIR, '..', 'bower_components/foundation-sites/scss'),
