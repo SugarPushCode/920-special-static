@@ -3,6 +3,11 @@
   "description": "This app does one little thing, and does it well.",
   "buildpacks": [
     { "url": "https://github.com/beanieboi/nginx-buildpack" },
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs" },
     { "url": "https://github.com/heroku/heroku-buildpack-python" }
-  ]
+  ],
+    "scripts": {
+    "precompile": "gem install sass"
+  }
 }
+

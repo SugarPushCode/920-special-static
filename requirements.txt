@@ -6,3 +6,7 @@ Django<1.10
 jinja2
 pyyaml
 django_jinja
+django-pipeline
+django-pipeline-compass
+path.py
+libsass

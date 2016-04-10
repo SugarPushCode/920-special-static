@@ -18,10 +18,12 @@ import os
 # External Libraries
 import yaml
 from django_jinja.builtins import DEFAULT_EXTENSIONS
+from path import path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = (path(__file__).dirname() / '..').abspath()
+PROJECT_ROOT = (BASE_DIR / '..').abspath()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -30,8 +32,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5@l^^lozn5d41x1iiotg#=!g#osewcc1mf8x4em&u-htb-9eae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', False)
-
+DEBUG = bool(int(os.environ.get('DEBUG', False)))
+print(DEBUG)
 ALLOWED_HOSTS = ['*', ]
 
 
@@ -46,6 +48,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'lindy.static920',
+
+    'pipeline',
+    # 'djangobower',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -61,13 +66,17 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'lindy.special920.urls'
 
+from django_jinja.backend import  Jinja2
 TEMPLATES = [
     {
         'BACKEND': 'django_jinja.backend.Jinja2',
         'APP_DIRS': True,
         'OPTIONS': {
+            'cache_size': 0,
             'match_extension': '.jinja',
+            'auto_reload': DEBUG,
             'extensions': DEFAULT_EXTENSIONS + [
+                'pipeline.jinja2.PipelineExtension',
             ],
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -104,7 +113,7 @@ WSGI_APPLICATION = 'lindy.special920.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -141,12 +150,42 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
+
+SHOW_ERRORS_INLINE = False
+PIPELINE = {
+    'SHOW_ERRORS_INLINE': False,
+    'STYLESHEETS': {
+        'app': {
+            'source_filenames': (
+                'scss/app.scss',
+            ),
+            'output_filename': 'css/app.css',
+        },
+    },
+    'COMPILERS': (
+        'pipeline.compilers.sass.SASSCompiler',
+    ),
+    'CSS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
+    'JS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
+    # 'SASS_BINARY': PROJECT_ROOT / 'node_modules' / '.bin' / 'node-sass',
+    'SASS_BINARY': '/usr/bin/env python -m sassc',
+    'SASS_ARGUMENTS': ' '.join('-I {}'.format(d) for d in (
+        PROJECT_ROOT / 'bower_components/foundation-sites/scss',
+        PROJECT_ROOT / 'bower_components/motion-ui/src',
+    ))
+}
+
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '..', 'static')
+STATIC_ROOT = PROJECT_ROOT / 'static'
 
-
-HACK_DB = yaml.load(open(os.path.join(BASE_DIR, '..', 'data.yml')))
+HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
