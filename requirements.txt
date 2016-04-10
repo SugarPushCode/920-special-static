@@ -9,3 +9,4 @@ django_jinja
 django-pipeline
 django-pipeline-compass
 path.py
+libsass

@@ -23,8 +23,7 @@ from path import path
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = (path(__file__).dirname() / '..').abspath()
-PROJECT_ROOT = (BASE_DIR / '..' ).abspath()
-print(BASE_DIR)
+PROJECT_ROOT = (BASE_DIR / '..').abspath()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -33,8 +32,8 @@ print(BASE_DIR)
 SECRET_KEY = '5@l^^lozn5d41x1iiotg#=!g#osewcc1mf8x4em&u-htb-9eae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = int(os.environ.get('DEBUG', False))
-
+DEBUG = bool(int(os.environ.get('DEBUG', False)))
+print(DEBUG)
 ALLOWED_HOSTS = ['*', ]
 
 
@@ -52,7 +51,6 @@ INSTALLED_APPS = [
 
     'pipeline',
     # 'djangobower',
-
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -68,14 +66,17 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'lindy.special920.urls'
 
+from django_jinja.backend import  Jinja2
 TEMPLATES = [
     {
         'BACKEND': 'django_jinja.backend.Jinja2',
         'APP_DIRS': True,
         'OPTIONS': {
+            'cache_size': 0,
             'match_extension': '.jinja',
+            'auto_reload': DEBUG,
             'extensions': DEFAULT_EXTENSIONS + [
-                # 'pipeline.jinja2.PipelineExtension',
+                'pipeline.jinja2.PipelineExtension',
             ],
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -159,40 +160,32 @@ STATICFILES_FINDERS = (
     'pipeline.finders.PipelineFinder',
 )
 
-
+SHOW_ERRORS_INLINE = False
 PIPELINE = {
-    'PIPELINE_ENABLED': True,
-    'COMPILERS': (
-        'pipeline.compilers.sass.SASSCompiler',
-    ),
+    'SHOW_ERRORS_INLINE': False,
     'STYLESHEETS': {
-        'master': {
+        'app': {
             'source_filenames': (
                 'scss/app.scss',
             ),
             'output_filename': 'css/app.css',
         },
     },
+    'COMPILERS': (
+        'pipeline.compilers.sass.SASSCompiler',
+    ),
     'CSS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
     'JS_COMPRESSOR': 'pipeline.compressors.NoopCompressor',
-    'SASS_BINARY': PROJECT_ROOT / 'node_modules' / '.bin' / 'node-sass',
-    'SASS_ARGUMENTS': ' '.join('--include-path {}'.format(d) for d in (
+    # 'SASS_BINARY': PROJECT_ROOT / 'node_modules' / '.bin' / 'node-sass',
+    'SASS_BINARY': '/usr/bin/env python -m sassc',
+    'SASS_ARGUMENTS': ' '.join('-I {}'.format(d) for d in (
         PROJECT_ROOT / 'bower_components/foundation-sites/scss',
         PROJECT_ROOT / 'bower_components/motion-ui/src',
     ))
 }
-
-print(PIPELINE)
 
 
 STATIC_URL = '/static/'
 STATIC_ROOT = PROJECT_ROOT / 'static'
 
 HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
-
-
-# from functools import partial
-# import django.contrib.staticfiles.urls
-# from django.views.static import serve
-
-# django.contrib.staticfiles.urls.serve = partial(serve, document_root=STATIC_ROOT, show_indexes=True)
