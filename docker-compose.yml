@@ -1,0 +1,10 @@
+special920:
+  build: .
+  volumes:
+    - .:/app
+  ports:
+    - "8000:8000"
+  environment:
+    - VERBOSE=1
+    - PYTHONUNBUFFERED=1
+    - DOCKER=1

@@ -1,4 +1,16 @@
-# Quickstart
+# Setup
+
+There are two options for running it, 1) via docker, or 2) via django. The first method only requires docker to be installed and is much simpler for most users, while the second version is more flexible and better for advanced users.
+
+### Method 1: Docker
+
+First follow the getting started instructions at [docker.com](https://docs.docker.com), or install via [homebrew](http://brew.sh). Make sure that you have docker and docker-compose installed, I recommend installing them via docker-toolbox which gives you everything you need that is docker related.
+
+Next, simply run
+
+    docker-compose up
+
+### Method 2: django and `manage.py`
 
 If you know how to use npm and python virtual environments then this section is for you! If you don't then you'll need to talk to one of the devs that does as documenting the instalation of python, node, virtualenv, and other build tools is out of the scope of this doc.
 
@@ -10,9 +22,6 @@ If you know how to use npm and python virtual environments then this section is 
     - clear the static, node, and bower dirs
     - install all node dependencies like bower and foundation
     - install all python requirements
-
-
-# Run it
 
 Using the django entrypoint of `mangage.py` we can do many things.
 
@@ -41,6 +50,7 @@ This means that as much as possible is being done with python via django. This i
 ```
 .
 ├── Dockerfile                  # docker deffinition
+├── docker-compose.yml          # docker compose deffinition
 ├── ISSUE_TEMPLATE              # git-hub template for new issues
 ├── Makefile                    # bootstrap for local development
 ├── Procfile                    # heroku worker deffinitions
