@@ -1,6 +1,20 @@
 djs:
-  - 'allenkerr'
-  - 'manusmith'
+  - date: 4/7/2016
+    names:
+      - 'Allen Kerr'
+      - 'Manu Smith'
+  - date: 4/14/2016
+    names:
+      - 'Arnold Cabreza'
+      - 'Dhruv Bhargava'
+  - date: 4/21/2016
+    names:
+      - 'Alex Fernandez'
+      - 'Nathan Dias'
+  - date: 4/28/2016
+    names:
+      - 'Sharon Ashe'
+      - 'TBD'
 
 news:
   # - date: mm/dd/yyyy (optional)

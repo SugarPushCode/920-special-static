@@ -15,9 +15,6 @@ class Person(_Person):
         return '/static/img/people/{}.jpg'.format(self.slug)
 
 
-TEACHER = 'teacher'
-DJ = 'dj'
-
 people = (
     Person(name='Iris Tarou', slug='iristarou',),
     Person(name='Kirk Tarou', slug='kirktarou',),
