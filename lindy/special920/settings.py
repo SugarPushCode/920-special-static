@@ -53,7 +53,6 @@ INSTALLED_APPS = [
 
     'pipeline',
     # 'djangobower',
-    'contact_form',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -195,3 +194,5 @@ HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
 
 SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
 SENDGRID_USERNAME = environ.get('SENDGRID_USERNAME')
+
+CONTACT_EMAIL = 'info@920special.com'
