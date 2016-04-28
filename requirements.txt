@@ -11,3 +11,4 @@ django-pipeline-compass
 path.py
 libsass
 toolz
+sendgrid
