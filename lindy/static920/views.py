@@ -20,14 +20,20 @@ from lindy.static920.models.people import (
     TEACHERS,
 )
 
+def now():
+    from tzlocal import get_localzone
+    local = get_localzone()
+    return datetime.now(local)
 
 class DateItem(dict):
 
     @property
     def hide(self):
+
+
         return (
             self.get('hide', False)
-            or (self.date and self.date < datetime.now().date())
+            or (self.date and self.date < now().date())
         )
 
     @cached_property
