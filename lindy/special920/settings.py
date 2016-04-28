@@ -14,9 +14,11 @@ from __future__ import absolute_import
 
 # Standard Library
 import os
+from os import environ
 
 # External Libraries
 import yaml
+from django_jinja.backend import Jinja2
 from django_jinja.builtins import DEFAULT_EXTENSIONS
 from path import path
 
@@ -32,7 +34,7 @@ PROJECT_ROOT = (BASE_DIR / '..').abspath()
 SECRET_KEY = '5@l^^lozn5d41x1iiotg#=!g#osewcc1mf8x4em&u-htb-9eae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(int(os.environ.get('DEBUG', False)))
+DEBUG = bool(int(environ.get('DEBUG', False)))
 print(DEBUG)
 ALLOWED_HOSTS = ['*', ]
 
@@ -51,6 +53,7 @@ INSTALLED_APPS = [
 
     'pipeline',
     # 'djangobower',
+    'contact_form',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -66,14 +69,14 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'lindy.special920.urls'
 
-from django_jinja.backend import  Jinja2
 TEMPLATES = [
     {
         'BACKEND': 'django_jinja.backend.Jinja2',
         'APP_DIRS': True,
         'OPTIONS': {
             'cache_size': 0,
-            'match_extension': '.jinja',
+            'match_extension': '',
+            'match_regex': r'.*',
             'auto_reload': DEBUG,
             'extensions': DEFAULT_EXTENSIONS + [
                 'pipeline.jinja2.PipelineExtension',
@@ -189,3 +192,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = PROJECT_ROOT / 'static'
 
 HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
+
+SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
+SENDGRID_USERNAME = environ.get('SENDGRID_USERNAME')

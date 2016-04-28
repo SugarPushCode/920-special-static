@@ -2,18 +2,21 @@ from __future__ import absolute_import
 
 # Standard Library
 from datetime import datetime
+from textwrap import dedent
 
 # External Libraries
+import sendgrid
 from django.conf import settings
+from django.http import HttpResponseRedirect
 from django.utils.functional import cached_property
-from django.views.generic import TemplateView
+from django.views.generic import (
+    TemplateView,
+    View,
+)
 
 # Project Library
-from toolz import first
-
 from lindy.static920.models.people import (
     DJS,
-    PEOPLE,
     TEACHERS,
 )
 
@@ -101,3 +104,43 @@ class Music(BaseView):
 
 class Volunteers(BaseView):
     template_name = 'volunteers.jinja'
+
+
+class Contact(View):
+
+    def post(self, request, *args, **kwargs):
+
+        name = request.POST.get('name')
+        reason = request.POST.get('reason')
+        reason_word = reason.split()[-1]
+        message = request.POST.get('message')
+        email = request.POST.get('email')
+        next = request.GET.get('next', '/')
+
+        text = dedent('''\
+        Who:
+
+        {name} ({email})
+
+        Reason:
+
+        {reason}
+
+        Message:
+
+        {message}
+        '''.format(name=name,reason=reason,message=message,email=email,))
+
+        subject = '[{reason}] {subject}...'.format(reason=reason_word, subject=message[:50])
+
+        sg = sendgrid.SendGridClient(settings.SENDGRID_USERNAME,  settings.SENDGRID_PASSWORD)
+
+        sg_message = sendgrid.Mail()
+        sg_message.add_to('adam@northisup.com')
+        sg_message.set_from(email)
+        sg_message.set_from_name(name)
+        sg_message.set_subject(subject)
+        sg_message.set_text(text)
+        sg.send(sg_message)
+
+        return HttpResponseRedirect(next)

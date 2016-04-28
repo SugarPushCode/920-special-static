@@ -199,20 +199,21 @@
         <h2>Contact Us</h2>
       </header>
       <section>
-        <form class="row align-right">
+        <form class="row align-right" method="POST" action="/contact/?next=/about.html#contact">
+          <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
           <div class="column small-12 medium-6 large-4">
-            <label for="name">Your name</label><input type="text" placeholder="Norma Miller" id="name">
-            <label for="email">Your email</label><input type="email" placeholder="norma@thesavoy.org" id="email">
+            <label for="name">Your name</label><input type="text" placeholder="Norma Miller" name="name">
+            <label for="email">Your email</label><input type="email" placeholder="norma@thesavoy.org" name="email">
           </div>
           <div class="column small-12 medium-6 large-8">
             <label for="reason">Why are you reaching out to us?</label>
-            <select id="reason">
+            <select id="reason" name="reason">
               <option>I have some questions</option>
               <option>I want to volunteer</option>
               <option>I'm interested in private lessons</option>
             </select>
             <label for="message">What do you want to ask us?</label>
-            <textarea placeholder="I'd love to take dance lessons but I have some questions" id="message"></textarea>
+            <textarea placeholder="I'd love to take dance lessons but I have some questions" name="message"></textarea>
           </div>
           <div class="column shrink">
             <button class="button large">Send Message</button>

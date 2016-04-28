@@ -8,6 +8,7 @@ from django.conf.urls import url
 from .views import (
     About,
     Classes,
+    Contact,
     Dance,
     Index,
     Music,
@@ -20,6 +21,6 @@ urlpatterns = [
     url(r'^dance', Dance.as_view()),
     url(r'^music', Music.as_view()),
     url(r'^volunteers', Volunteers.as_view()),
+    url(r'^contact/?', Contact.as_view()),
     url(r'^$', Index.as_view()),
-
 ]
