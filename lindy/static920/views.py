@@ -21,8 +21,8 @@ from lindy.static920.models.people import (
 )
 
 def now():
-    from tzlocal import get_localzone
-    local = get_localzone()
+    from tzlocal import timezone
+    local = timezone("America/Los Angeles")
     return datetime.now(local)
 
 class DateItem(dict):
