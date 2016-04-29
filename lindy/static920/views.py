@@ -38,7 +38,8 @@ class DateItem(dict):
 
     @cached_property
     def date(self):
-        return datetime.strptime(self['date'], "%m/%d/%Y").date() if 'date' in self else None
+        if "date" in self:
+            return datetime.strptime(self['date'], "%m/%d/%Y").date() if 'date' in self else None
 
 
 class NewsItem(DateItem):
