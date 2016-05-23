@@ -113,7 +113,7 @@ class Dance(BaseView):
             'this_month': this_month('%B'),
             'next_month': next_month('%B'),
             'schedule_this_month': settings.TEACHER_SCHEDULE[this_month()],
-            'schedule_next_month': settings.TEACHER_SCHEDULE[this_month()],
+            'schedule_next_month': settings.TEACHER_SCHEDULE.get(next_month()),
         }
 
 

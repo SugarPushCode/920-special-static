@@ -198,14 +198,12 @@ with open('teacher_schedule.csv') as schedule:
 
     lines = reader(schedule)
     header = list(map(str.strip, next(lines)))
-    print(header)
 
     lines = [list(map(str.strip, line)) for line in lines if line]
 
     TEACHER_SCHEDULE = {}
     for line in lines:
         line = dict(zip(header, line))
-        print(line)
         d = {}
         for key, value in line.items():
             if key.lower() == 'month':

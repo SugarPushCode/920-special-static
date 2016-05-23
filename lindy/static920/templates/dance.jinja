@@ -39,9 +39,8 @@
       </section>
 
       <!-- Month 2 -->
-
       <header class="row inverse" id="schedule">
-        <h2>{{ this_month }}</h2>
+        <h2>Calendar</h2>
       </header>
       <section>
 
@@ -64,7 +63,7 @@
         </div>
 
         <div class="row">
-          <h3><br>Classes</h3>
+          <h3><br>{{ this_month }} Classes</h3>
         </div>
         <div class="row align-spaced">
           {% for time, classes in schedule_this_month|dictsort %}
@@ -77,6 +76,23 @@
             </div>
           {% endfor %}
         </div>
+      {% if schedule_next_month %}
+        <div class="row">
+          <h3><br>{{ next_month }} Classes</h3>
+        </div>
+        <div class="row align-spaced">
+          {% for time, classes in schedule_next_month|dictsort %}
+            <div class="small-6 medium-3 column">
+              <h4>{{ time }}</h4>
+              {% for class_name, class_data in classes|dictsort %}
+                <h5>{{ class_name }}</h5>
+                {{ class_data }}
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+
+      {% endif %}
       </section>
 
       <!-- What is Lindy Hop -->
