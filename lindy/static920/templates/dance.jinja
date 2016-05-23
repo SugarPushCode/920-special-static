@@ -41,7 +41,7 @@
       <!-- Month 2 -->
 
       <header class="row inverse" id="schedule">
-        <h2>May 2016</h2>
+        <h2>{{ this_month }}</h2>
       </header>
       <section>
 
@@ -66,94 +66,17 @@
         <div class="row">
           <h3><br>Classes</h3>
         </div>
-
         <div class="row align-spaced">
-          <div class="small-6 medium-3 column week">
-            <div class="row">
-              <h4>7:20 PM</h4>
+          {% for time, classes in schedule_this_month|dictsort %}
+            <div class="small-6 medium-3 column">
+              <h4>{{ time }}</h4>
+              {% for class_name, class_data in classes|dictsort %}
+                <h5>{{ class_name }}</h5>
+                {{ class_data }}
+              {% endfor %}
             </div>
-            <div class="row collapse align-justify">
-              <div class="column shrink">
-                <strong>Lindy 1A</strong>
-              </div>
-              <div class="column small-7">
-                <p>Jean Ma<br>
-                Bromley Palamountain</p>
-              </div>
-            </div>
-            <div class="row collapse align-justify">
-              <div class="column shrink">
-                <strong>Lindy 2B</strong>
-              </div>
-              <div class="column small-7">
-                <p>Ellen Huffman<br>
-                Douglas Mathews</p>
-              </div>
-            </div>
-            <div class="row collapse align-justify">
-              <div class="column shrink">
-                <strong>Lindy 4</strong>
-              </div>
-              <div class="column small-7">
-                <p>Nicole Zuckerman<br>
-                Carl Nelson</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="small-6 medium-3 column week">
-            <div class="row">
-              <h4>8:30 PM</h4>
-            </div>
-            <div class="row collapse align-justify">
-              <div class="column shrink">
-                <strong>Lindy 1B</strong>
-              </div>
-              <div class="column small-7">
-                <p>Nicole Zuckerman<br>
-                Carl Nelson</p>
-              </div>
-            </div>
-            <div class="row collapse align-justify">
-              <div class="column shrink">
-                <strong>Level 3</strong>
-              </div>
-              <div class="column small-7">
-                <p>Jean Ma<br>
-                Bromley Palamountain</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="small-6 medium-3 column week">
-            <div class="row">
-              <h4>9:00 PM</h4>
-            </div>
-            <div class="row collapse align-justify">
-              <div class="column shrink">
-                <strong>Taster Class</strong>
-              </div>
-              <div class="column small-7">
-                <p>Ellen Huffman<br>
-                Douglas Mathews</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="small-6 medium-3 column week">
-            <div class="row">
-              <h4>9:30 PM</h4>
-            </div>
-            <div class="row collapse align-justify">
-              <div class="column shrink">
-                <strong>Solo Jazz</strong>
-              </div>
-              <div class="column small-7">
-                <p>Ryan Calloway</p>
-              </div>
-            </div>
+          {% endfor %}
         </div>
-
       </section>
 
       <!-- What is Lindy Hop -->

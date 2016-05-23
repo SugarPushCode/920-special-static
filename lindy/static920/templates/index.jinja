@@ -75,9 +75,9 @@
                 {% for time, classes in schedule|dictsort %}
                     <div class="small-6 medium-3 column">
                         <h4>{{ time }}</h4>
-                        {% for class_name, class_data in classes.items() %}
+                        {% for class_name, class_data in classes|dictsort %}
                             <h5>{{ class_name }}</h5>
-                            {{ class_data['instructors']|join(' & ') }}
+                            {{ class_data }}
                         {% endfor %}
                     </div>
                 {% endfor %}

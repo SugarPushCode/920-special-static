@@ -1,7 +1,10 @@
 from __future__ import absolute_import
 
 # Standard Library
-from datetime import datetime
+from datetime import (
+    datetime,
+    timedelta,
+)
 from textwrap import dedent
 
 # External Libraries
@@ -20,17 +23,22 @@ from lindy.static920.models.people import (
     TEACHERS,
 )
 
+
 def now():
     from pytz import timezone
     local = timezone('US/Pacific')
     return datetime.now(local)
 
+def this_month(format='%m/%Y'):
+    return now().strftime(format)
+
+def next_month(format='%m/%Y'):
+    return (now().replace(day=28) + timedelta(days=4)).strftime(format)
+
 class DateItem(dict):
 
     @property
     def hide(self):
-
-
         return (
             self.get('hide', False)
             or (self.date and self.date < now().date())
@@ -69,14 +77,15 @@ class Index(BaseView):
 
         # get the names of the djs this week
         # filter djs down to ones that are today or in the future and pick the min date
-        djs = min(
-            (djs for djs in map(DateItem, self.db['djs']) if not djs.hide),
-            key=lambda x: x.date
-        ).get('names', ['TBD'])  # default to a "TBD" state
+        djs = [djs for djs in map(DateItem, self.db['djs']) if not djs.hide]
+        if djs:
+            djs = min(djs, key=lambda x: x.date).get('names', ['TBD'])  # default to a "TBD" state
+        else:
+            djs = ['TBD']
 
         return {
             'djs': djs,
-            'schedule': self.db['schedule'],
+            'schedule': settings.TEACHER_SCHEDULE[this_month()],
             'news': news,
         }
 
@@ -89,7 +98,9 @@ class Classes(BaseView):
     template_name = 'classes.jinja'
 
     def get_context_data(self, **kwargs):
-        return {'teachers': TEACHERS}
+        return {
+            'teachers': TEACHERS
+        }
 
 
 class Dance(BaseView):
@@ -98,7 +109,11 @@ class Dance(BaseView):
     def get_context_data(self, **kwargs):
         return {
             # show the next four djs
-            'djs': [djs for djs in map(DateItem, self.db['djs']) if not djs.hide][:4]
+            'djs': [djs for djs in map(DateItem, self.db['djs']) if not djs.hide][:4],
+            'this_month': this_month('%B'),
+            'next_month': next_month('%B'),
+            'schedule_this_month': settings.TEACHER_SCHEDULE[this_month()],
+            'schedule_next_month': settings.TEACHER_SCHEDULE[this_month()],
         }
 
 
@@ -136,11 +151,11 @@ class Contact(View):
         Message:
 
         {message}
-        '''.format(name=name,reason=reason,message=message,email=email,))
+        '''.format(name=name, reason=reason, message=message, email=email,))
 
         subject = '[{reason}] {subject}...'.format(reason=reason_word, subject=message[:50])
 
-        sg = sendgrid.SendGridClient(settings.SENDGRID_USERNAME,  settings.SENDGRID_PASSWORD)
+        sg = sendgrid.SendGridClient(settings.SENDGRID_USERNAME, settings.SENDGRID_PASSWORD)
 
         sg_message = sendgrid.Mail()
         sg_message.add_to(settings.CONTACT_EMAIL)

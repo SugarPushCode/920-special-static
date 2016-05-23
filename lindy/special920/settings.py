@@ -192,8 +192,32 @@ STATIC_ROOT = PROJECT_ROOT / 'static'
 
 HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
 
+
+with open('teacher_schedule.csv') as schedule:
+    from csv import reader
+
+    lines = reader(schedule)
+    header = list(map(str.strip, next(lines)))
+    print(header)
+
+    lines = [list(map(str.strip, line)) for line in lines if line]
+
+    TEACHER_SCHEDULE = {}
+    for line in lines:
+        line = dict(zip(header, line))
+        print(line)
+        d = {}
+        for key, value in line.items():
+            if key.lower() == 'month':
+                if not(value.startswith('0') or value.startswith('12')):
+                    value = '0' + value
+                TEACHER_SCHEDULE[value] = d
+            else:
+                name, time = key.split('@')
+                d.setdefault(time, {})[name] = value
+
+
 SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
 SENDGRID_USERNAME = environ.get('SENDGRID_USERNAME')
 
 CONTACT_EMAIL = 'info@920special.com'
-
