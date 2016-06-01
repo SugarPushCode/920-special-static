@@ -1,36 +1,24 @@
 djs:
-  - date: 4/7/2016
+  - date: 6/2/2016
     names:
       - 'Allen Kerr'
+      - 'Nirav Sanghani'
+  - date: 6/9/2016
+    names:
+      - 'Hep Jen'
+      - 'Ben Nathan'
+  - date: 6/16/2016
+    names:
       - 'Manu Smith'
-  - date: 4/14/2016
+      - 'Nicole Zuckerman'
+  - date: 6/23/2016
     names:
       - 'Arnold Cabreza'
-      - 'Dhruv Bhargava'
-  - date: 4/21/2016
+      - 'Justin Hill'
+  - date: 6/30/2016
     names:
       - 'Alex Fernandez'
-      - 'Nathan Dias'
-  - date: 4/28/2016
-    names:
-      - 'Sharon Ashe'
-      - 'Hep Jen'
-  - date: 5/5/2016
-    names:
-      - 'Hep Jen'
-      - 'Nicole Zuckerman'
-  - date: 5/12/2016
-    names:
-      - 'Manu Smith'
-      - 'Allen Kerr'
-  - date: 5/19/2016
-    names:
-      - 'Ben Nathan'
-      - 'Nirav Sanghani'
-  - date: 5/26/2016
-    names:
       - 'Dhruv Bhargava'
-      - 'Alex Fernandez'
       
 news:
   # - date: mm/dd/yyyy (optional)
@@ -45,3 +33,9 @@ news:
   - date: 4/28/2016
     name: Old School Night
     content: "Save the Date for the next Old School Night at the 9:20 Special!!! 'Revival' attire encouraged but not required. The invitation is open to everyone old and new school, so please invite anyone you miss dancing with."
+  - date: 6/16/2016
+    name: Summer Soul
+    content: ""
+  - date: 6/30/2016
+    name: Open House
+    content: ""
