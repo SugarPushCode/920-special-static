@@ -15,6 +15,7 @@ from __future__ import absolute_import
 # Standard Library
 import os
 from os import environ
+import pprint
 
 # External Libraries
 import yaml
@@ -212,8 +213,10 @@ with open('teacher_schedule.csv') as schedule:
                 TEACHER_SCHEDULE[value] = d
             else:
                 name, time = key.split('@')
+                if ':' in value:
+                    section, value = value.split(':')
+                    name = name + section
                 d.setdefault(time, {})[name] = value
-
 
 SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
 SENDGRID_USERNAME = environ.get('SENDGRID_USERNAME')
