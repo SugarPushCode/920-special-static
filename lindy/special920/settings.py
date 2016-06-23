@@ -193,6 +193,20 @@ STATIC_ROOT = PROJECT_ROOT / 'static'
 
 HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
 
+class_desc_dict = {
+    'Lindy 1A': '6-Count',
+    'Lindy 1B': '8-Count',
+    'Lindy 1C': 'Charleston',
+    'Lindy 2A': 'Swingouts',
+    'Lindy 2B': 'Musicality',
+    'Lindy 2C': 'Charleston',
+    'Lindy 2D': 'Classics',
+    'Lindy 3A': 'Technique',
+    'Lindy 3B': 'Musicality',
+    'Lindy 3C': 'Beyond Lindy Hop',
+    'Lindy 3D': 'Vocabulary',
+    'Lindy 3P': 'Performance Class',
+}
 
 with open('teacher_schedule.csv') as schedule:
     from csv import reader
@@ -212,10 +226,24 @@ with open('teacher_schedule.csv') as schedule:
                     value = '0' + value
                 TEACHER_SCHEDULE[value] = d
             else:
+                # eg. Lindy 1@7:20
                 name, time = key.split('@')
+
+                # In the instructor field of the CSV file,
+                # prepend with the class letter and a colon
+                # eg. A:Kirk & Iris
                 if ':' in value:
                     section, value = value.split(':')
-                    name = name + section
+
+                    # 'Lindy 1A'
+                    class_name = name + section
+
+                    # Look up the description in the dictionary
+                    if class_name in class_desc_dict:
+                        name = class_name + ' - ' +  class_desc_dict[class_name]
+                    else:
+                        name = class_name
+                        print('Unknown class type: ' + class_name)
                 d.setdefault(time, {})[name] = value
 
 SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
