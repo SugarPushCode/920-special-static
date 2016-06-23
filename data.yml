@@ -19,6 +19,22 @@ djs:
     names:
       - 'Alex Fernandez'
       - 'Dhruv Bhargava'
+  - date: 7/7/2016
+    names:
+      - 'Allen Kerr'
+      - 'Sean Krazit'
+  - date: 7/14/2016
+    names:
+      - 'Alex Fernandez'
+      - 'Justin Hill'
+  - date: 7/21/2016
+    names:
+      - 'Nicole Zuckerman'
+      - 'Dhruv Bhargava'
+  - date: 7/28/2016
+    names:
+      - 'Hep Jen'
+      - 'Nirav Sanghani'
       
 news:
   # - date: mm/dd/yyyy (optional)
