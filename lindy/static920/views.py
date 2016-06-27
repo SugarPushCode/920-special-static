@@ -85,7 +85,7 @@ class Index(BaseView):
 
         return {
             'djs': djs,
-            'schedule': settings.TEACHER_SCHEDULE[this_month()],
+            'schedule': settings.TEACHER_SCHEDULE.get(this_month()),
             'news': news,
         }
 
