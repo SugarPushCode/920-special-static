@@ -112,7 +112,7 @@ class Dance(BaseView):
             'djs': [djs for djs in map(DateItem, self.db['djs']) if not djs.hide][:4],
             'this_month': this_month('%B'),
             'next_month': next_month('%B'),
-            'schedule_this_month': settings.TEACHER_SCHEDULE[this_month()],
+            'schedule_this_month': settings.TEACHER_SCHEDULE.get(this_month()),
             'schedule_next_month': settings.TEACHER_SCHEDULE.get(next_month()),
         }
 
