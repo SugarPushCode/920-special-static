@@ -11,12 +11,12 @@
           <img src="static/img/hero-logo.png" alt="Thursday Nights at 2460 Sutter St, 9:20 Special" class="hero-logo float-center">
         </div>
         <div class="align-bottom order-3 callout large-4 medium-5 small-10 column">
-          <h3>FREE Open House<br>
-          Thursday, June 30th</h3>
-          <p>8:30 - 9:30 PM - Free Beginner Lindy Hop Class<br>
-          9:30 PM - 12:30 AM - Free Social Dance<br>
-          10:15 PM - Performances</p>
-          <a href="https://www.facebook.com/events/1719735921614835/" class="button large expanded">More Info</a>
+          <h3>Thursday Night Dance</h3>
+          <p>Join us every Thursday night for our evening dance party.
+          <br><strong>Where:</strong> Russian Center, 2460 Sutter St.
+          <br><strong>When:</strong> Thursday nights, 9:30pm to 12:30am
+          <br><strong>Cost:</strong> $9 ($7 students, seniors, military)</p>
+          <a type="button" class="button large expanded" href="#schedule">View schedule</a>
         </div>
       </div>
 
@@ -28,8 +28,8 @@
         <div class="column small-12 medium-5">
           <h3>Taster Class</h3>
           <p>Check out our drop-in taster class starting at 9:00pm and see what Lindy Hop is all about.</p>
-          <p>No partner or experience required to attend this weekly class. Included in the price of dance admission ($7 students/seniors / $9 regular).</p>
-          <a type="buttton" class="button large" href="http://clients.mindbodyonline.com/ws.asp?studioid=41810&stype=-7&sView=day">Register Now</a>
+          <p>No partner or experience required to attend this weekly class.</p>
+          <a type="buttton" class="button large" href="http://clients.mindbodyonline.com/ws.asp?studioid=41810&stype=-7&sView=day&sDate=03/03/2016">Register Now</a>
         </div>
         <div class="column small-12 medium-5">
           <h3>What to Wear</h3>
@@ -38,63 +38,430 @@
         </div>
       </section>
 
-      <!-- Month 2 -->
       <header class="row inverse" id="schedule">
-        <h2>Calendar</h2>
+        <h2>March 2016</h2>
       </header>
-      <section>
+      <section class="row align-spaced">
 
-        <!-- DJs -->
-        <div class="row">
-          <h3>DJs</h3>
-        </div>
-        <div class="row align-spaced">
-          {%  for dj in djs %}
-            <div class="column small-12 medium-6 large-expand week">
-              <h4>{{ dj.date.strftime('%B %e') }}</h4>
-              <div class="column">
-                <h5>DJs</h5>
-                {% for names in dj.names %}
-                  <p>{{ names }}</p>
-                {% endfor %}
+        <!-- Week 1 -->
+        <div class="column small-12 medium-6 large-expand week">
+          <h4>March 3rd</h4>
+          <div class="column">
+            <h5>DJs</h5>
+            <p>Justin Hill<br>
+            Nicole Zuckerman</p>
+          </div>
+          <div class="row">
+            <div class="column small-12 medium-12 large-12">
+              <h5>Classes</h5>
+            </div>
+            <div class="column small-12 medium-12 large-12">
+              <div class="row">
+                <strong>7:20 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 2</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>8:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 3</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:00 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Taster</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Gilles Bouvier<br>
+                  Julia Farrell</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Solo Jazz</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Manu Smith</p>
+                </div>
               </div>
             </div>
-          {%  endfor %}
+          </div>
         </div>
 
-      {% if schedule_this_month %}
-        <div class="row">
-          <h3><br>{{ this_month }} Classes</h3>
-        </div>
-        <div class="row align-spaced">
-          {% for time, classes in schedule_this_month|dictsort %}
-            <div class="small-6 medium-3 column">
-              <h4>{{ time }}</h4>
-              {% for class_name, class_data in classes|dictsort %}
-                <h5>{{ class_name }}</h5>
-                {{ class_data }}
-              {% endfor %}
+        <!-- Week 2 -->
+        <div class="column small-12 medium-6 large-expand week">
+          <h4>March 10th</h4>
+          <div class="column">
+            <h5>DJs</h5>
+            <p>Hep Jen<br>
+            Nirav Sanghani</p>
+          </div>
+          <div class="row">
+            <div class="column small-12 medium-12 large-12">
+              <h5>Classes</h5>
             </div>
-          {% endfor %}
-        </div>
-      {% endif %}
-      {% if schedule_next_month %}
-        <div class="row">
-          <h3><br>{{ next_month }} Classes</h3>
-        </div>
-        <div class="row align-spaced">
-          {% for time, classes in schedule_next_month|dictsort %}
-            <div class="small-6 medium-3 column">
-              <h4>{{ time }}</h4>
-              {% for class_name, class_data in classes|dictsort %}
-                <h5>{{ class_name }}</h5>
-                {{ class_data }}
-              {% endfor %}
+            <div class="column small-12 medium-12 large-12">
+              <div class="row">
+                <strong>7:20 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 2</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>8:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 3</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:00 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Taster</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Gilles Bouvier<br>
+                  Julia Farrell</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Solo Jazz</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Manu Smith</p>
+                </div>
+              </div>
             </div>
-          {% endfor %}
+          </div>
         </div>
 
-      {% endif %}
+        <!-- Week 3 -->
+        <div class="column small-12 medium-6 large-expand week">
+          <h4>March 17th</h4>
+          <div class="column">
+            <h5>DJs</h5>
+            <p>Ben Nathan<br>
+            Dhruv Bhargava</p>
+          </div>
+          <div class="row">
+            <div class="column small-12 medium-12 large-12">
+              <h5>Classes</h5>
+            </div>
+            <div class="column small-12 medium-12 large-12">
+              <div class="row">
+                <strong>7:20 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 2</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>8:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 3</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:00 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Taster</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Gilles Bouvier<br>
+                  Julia Farrell</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Solo Jazz</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Manu Smith</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 4 - Closed -->
+        <div class="column small-12-medium-6 shrink week">
+          <h4>March 24th</h4>
+          <div class="column">
+            <h5>CLOSED</h5>
+          </div>
+        </div>
+
+        <!-- Week 4 -->
+<!--        <div class="column small-12 medium-6 large-expand week">
+          <h4>March 3rd</h4>
+          <div class="column">
+            <h5>DJs</h5>
+            <p>Allen Kerr<br>
+            Nicole Zuckerman</p>
+          </div>
+          <div class="row">
+            <div class="column small-12 medium-12 large-12">
+              <h5>Classes</h5>
+            </div>
+            <div class="column small-12 medium-12 large-12">
+              <div class="row">
+                <strong>7:20 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 2</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>8:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 3</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:00 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Taster</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Solo Jazz</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Week 5 -->
+        <div class="column small-12 medium-6 large-expand week">
+          <h4>March 31st</h4>
+          <div class="column">
+            <h5>DJs</h5>
+            <p>Allen Kerr<br>
+            Alexander Fernandez</p>
+          </div>
+          <div class="row">
+            <div class="column small-12 medium-12 large-12">
+              <h5>Classes</h5>
+            </div>
+            <div class="column small-12 medium-12 large-12">
+              <div class="row">
+                <strong>7:20 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 2</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Ann Mony<br>
+                  Ryan Calloway</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>8:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 3</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Lindy 1</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Kirk Tarou<br>
+                  Iris Tarou</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:00 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Taster</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Gilles Bouvier<br>
+                  Julia Farrell</p>
+                </div>
+              </div>
+              <div class="row">
+                <strong>9:30 PM</strong>
+              </div>
+              <div class="row collapse align-justify">
+                <div class="column shrink">
+                  <strong>Solo Jazz</strong>
+                </div>
+                <div class="column small-7">
+                  <p>Manu Smith</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </section>
 
       <!-- What is Lindy Hop -->
