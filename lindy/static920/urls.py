@@ -13,6 +13,7 @@ from .views import (
     Index,
     Music,
     Volunteers,
+    Survey,
 )
 
 urlpatterns = [
@@ -21,6 +22,7 @@ urlpatterns = [
     url(r'^dance', Dance.as_view()),
     url(r'^music', Music.as_view()),
     url(r'^volunteers', Volunteers.as_view()),
+    url(r'^survey', Survey.as_view()),
     url(r'^contact/?', Contact.as_view()),
     url(r'^$', Index.as_view()),
 ]

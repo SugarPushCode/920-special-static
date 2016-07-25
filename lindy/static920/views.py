@@ -127,6 +127,8 @@ class Music(BaseView):
 class Volunteers(BaseView):
     template_name = 'volunteers.jinja'
 
+class Survey(BaseView):
+    template_name = 'survey.jinja'
 
 class Contact(View):
 
