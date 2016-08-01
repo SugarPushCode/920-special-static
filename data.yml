@@ -1,24 +1,4 @@
 djs:
-  - date: 6/2/2016
-    names:
-      - 'Allen Kerr'
-      - 'Nirav Sanghani'
-  - date: 6/9/2016
-    names:
-      - 'Hep Jen'
-      - 'Ben Nathan'
-  - date: 6/16/2016
-    names:
-      - 'Manu Smith'
-      - 'Nicole Zuckerman'
-  - date: 6/23/2016
-    names:
-      - 'Arnold Cabreza'
-      - 'Justin Hill'
-  - date: 6/30/2016
-    names:
-      - 'Alex Fernandez'
-      - 'Dhruv Bhargava'
   - date: 7/7/2016
     names:
       - 'Allen Kerr'
@@ -35,6 +15,21 @@ djs:
     names:
       - 'Hep Jen'
       - 'Nirav Sanghani'
+  - date: 8/4/2016
+    names:
+        - 'Allen Kerr'
+        - 'Nicole Zuckerman'
+  - date: 8/11/2016
+    names:
+        - 'Nirav Sanghani'
+        - 'Sean Krazit'
+  - date: 8/18/2016
+    names:
+        - 'Old School night'
+  - date: 8/25/2016
+    names:
+        - 'Dhruv Bhargava'
+        - 'Arnold Cabreza'
       
 news:
   # - date: mm/dd/yyyy (optional)
@@ -59,4 +54,8 @@ news:
   - date: 6/30/2016
     name: Open House
     content: "It's back! The ever-popular FREE Open House at The 9:20 Special. This is the night we welcome new comers and thank our regulars by providing a free beginner Lindy Hop class, free social dance, free performances, and free raffle. Did we mention it's free?! And so. much. fun."
+    hide: False
+    - date: 8/18/2016
+    name: Old School Night
+    content: "Save the Date for the next Old School Night at the 9:20 Special!!! 'Revival' attire encouraged but not required. The invitation is open to everyone old and new school, so please invite anyone you miss dancing with."
     hide: False
