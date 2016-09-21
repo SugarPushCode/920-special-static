@@ -31,7 +31,26 @@ djs:
     names:
       - 'Dhruv Bhargava'
       - 'Arnold Cabreza'
-      
+  - date: 9/1/2016
+    names:
+      - 'Alex Fernandez'
+      - 'Nirav Sanghani'
+  - date: 9/8/2016
+    names:
+      - 'Hep Jen'
+      - 'Justin Hill'
+  - date: 9/15/2016
+    names:
+      - 'Allen Kerr'
+      - 'Manu Smith'
+  - date: 9/22/2016
+    names:
+      - 'Ben Nathan'
+      - 'Sean Krazit'
+  - date: 9/29/2016
+    names:
+      - 'Dhruv Bhargava'
+      - 'Nicole Zuckerman'
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
