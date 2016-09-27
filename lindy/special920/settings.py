@@ -222,7 +222,8 @@ with open('teacher_schedule.csv') as schedule:
         d = {}
         for key, value in line.items():
             if key.lower() == 'month':
-                if not(value.startswith('0') or value.startswith('12')):
+                (month,year) = value.split('/')
+                if int(month) < 10:
                     value = '0' + value
                 TEACHER_SCHEDULE[value] = d
             else:
