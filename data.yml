@@ -51,6 +51,21 @@ djs:
     names:
       - 'Dhruv Bhargava'
       - 'Nicole Zuckerman'
+  - date: 10/6/2016
+    names:
+      - 'Alex Fernandez'
+  - date: 10/13/2016
+    names:
+      - 'Sean Krazit'
+      - 'Dhruv Bhargava'
+  - date: 10/20/2016
+    names:
+      - 'Nicole Zuckerman'
+      - 'Nathan Dias'
+  - date: 10/27/2016
+    names:
+      - 'Nirav Sanghani'
+      - 'Allen Kerr'
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
