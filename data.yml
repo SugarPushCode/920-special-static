@@ -60,12 +60,12 @@ djs:
       - 'Dhruv Bhargava'
   - date: 10/20/2016
     names:
-      - 'Nicole Zuckerman'
+      - 'Allen Kerr'
       - 'Nathan Dias'
   - date: 10/27/2016
     names:
       - 'Nirav Sanghani'
-      - 'Allen Kerr'
+      - 'Nicole Zuckerman'
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
