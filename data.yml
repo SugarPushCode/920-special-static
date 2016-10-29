@@ -66,6 +66,20 @@ djs:
     names:
       - 'Nirav Sanghani'
       - 'Nicole Zuckerman'
+  - date: 11/3/2016
+    names:
+      - 'Allen Kerr'
+      - 'Dhruv Bhargava'
+  - date: 11/10/2016
+    names:
+      - 'Sean Krazit (Band Breaks)'
+  - date: 11/17/2016
+    names:
+      - 'Manu Smith'
+      - 'Nicole Zuckerman'
+  - date: 11/24/2016
+    names:
+      - 'Closed for Thanksgiving'
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
