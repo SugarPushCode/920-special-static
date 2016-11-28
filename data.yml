@@ -80,6 +80,24 @@ djs:
   - date: 11/24/2016
     names:
       - 'Closed for Thanksgiving'
+  - date: 12/1/2016
+    names:
+      - 'Allen Kerr'
+      - 'Nirav Sanghani'
+  - date: 12/8/2016
+    names:
+      - 'Alex Fernandez'
+      - 'Nicole Zuckerman'
+  - date: 12/15/2016
+    names:
+      - 'Hep Jen'
+      - 'Sean Krazit'
+  - date: 12/22/2016
+    names:
+      - 'Soul Night with Manu Smith'
+  - date: 12/29/2016
+    names:
+      - 'Closed, Happy Holidays!'
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
