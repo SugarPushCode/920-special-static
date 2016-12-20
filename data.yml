@@ -129,4 +129,16 @@ news:
   - date: 9/29/2016
     name: Musicality Classes with (real, live!) Musicians
     content: "On Thursday, September 29th, *everyone* is invited to join us for two 1-hour classes. Three jazz musicians and two Lindy Hop instructors will be sharing their knowledge of Swing music to help improve your dancing through a better understanding of the music. They'll do this with live and recorded music, demonstration, and dance!<br/>For more information, check out our <a href=https://www.facebook.com/events/1162177577189828/>Facebook event</a>"
+    hide: True
+  - date: 12/25/2016
+    name: Give the gift of dance
+    content: "Share your love of Lindy Hop with your friends and family. Visit our <a href=https://clients.mindbodyonline.com/classic/ws?studioid=41810&stype=42&sLoc=0&giftCardID=62>MindBody page</a> to purchase one today!"
+    hide: False
+  - date: 12/22/2016
+    name: Swing & Soul Night
+    content: "Come party with us for the *last* 9:20 Special of 2016! DJ Manu Smith will be playing the always-lovable, amazingly-fun, and sure-to-be-danceable swingin' Soul music all night long. Favorites like Aretha Franklin and Sam Cooke are a tiny sampling of what's coming your way. <br/>For more details, see the <a href=https://www.facebook.com/events/283515912044732/>Facebook event page</a>"
+    hide: False
+  - date: 12/29/2016
+    name: CLOSED FOR THE HOLIDAYS
+    content: "We're closed the last Thursday of December. Enjoy your time with friends and family and we'll see you in January!"
     hide: False
