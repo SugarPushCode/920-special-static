@@ -98,6 +98,22 @@ djs:
   - date: 12/29/2016
     names:
       - 'Closed, Happy Holidays!'
+  - date: 1/5/2017
+    names:
+      - 'Nathan Dias'
+      - 'Justin Hill'
+  - date: 1/12/2017
+    names:
+      - 'Alex Fernandez'
+      - 'Hep Jen'
+  - date: 1/19/2017
+    names:
+      - 'Manu Smith'
+      - 'Dhruv Bhargava'
+  - date: 1/26/2017
+    names:
+      - 'Allen Kerr'
+      - 'Nicole Zuckerman'
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
