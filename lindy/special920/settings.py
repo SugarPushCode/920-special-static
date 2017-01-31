@@ -194,9 +194,9 @@ STATIC_ROOT = PROJECT_ROOT / 'static'
 HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
 
 class_desc_dict = {
-    'Lindy 1A': '6-Count',
-    'Lindy 1B': '8-Count',
-    'Lindy 1C': 'Charleston',
+    'Lindy 1A': 'Connection',
+    'Lindy 1B': 'Rhythm',
+    'Lindy 1C': 'Playfulness',
     'Lindy 2A': 'Swingouts',
     'Lindy 2B': 'Musicality',
     'Lindy 2C': 'Charleston',
