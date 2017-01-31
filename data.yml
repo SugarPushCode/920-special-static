@@ -114,6 +114,22 @@ djs:
     names:
       - 'Rob Moreland'
       - 'Nicole Zuckerman'
+  - date: 2/2/2017
+    names:
+      - 'Alex Fernandez'
+      - 'Nirav Sanghani'
+  - date: 2/9/2017
+    names:
+      - 'Arnold Cabreza'
+      - 'Dhruv Bhargava'
+  - date: 2/16/2017
+    names:
+      - 'Closed (Russian Festival)'
+  - date: 2/23/2017
+    names:
+      - 'Allen Kerr'
+      - 'Nicole Zuckerman'
+
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
