@@ -161,6 +161,8 @@ class Contact(View):
 
         sg_message = sendgrid.Mail()
         sg_message.add_to(settings.CONTACT_EMAIL)
+        if settings.DEBUG_EMAIL:
+            sg_message.add_to(settings.DEBUG_EMAIL)
         sg_message.set_from(email)
         sg_message.set_from_name(name)
         sg_message.set_subject(subject)
