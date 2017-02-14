@@ -13,4 +13,4 @@ libsass
 toolz
 sendgrid
 tzlocal
-dateutil
+python-dateutil
