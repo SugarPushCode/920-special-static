@@ -5,10 +5,12 @@ from datetime import (
     datetime,
     timedelta,
 )
+from calendar import monthrange
 from textwrap import dedent
 
 # External Libraries
 import sendgrid
+from dateutil.relativedelta import relativedelta
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils.functional import cached_property
@@ -30,10 +32,22 @@ def now():
     return datetime.now(local)
 
 def this_month(format='%m/%Y'):
-    return now().strftime(format)
+    this_month_format='%d/%m/%Y'
+    offset = [3,2,1,0,6,5,4]
+    today = now()
+    c_day = today.day
+    c_month = today.month
+    c_year = today.year
+
+    if c_day + offset[today.weekday()] > monthrange(c_year, c_month)[1]:
+        return (datetime.strptime('{0}/{1}/{2}'.format(c_day, c_month,c_year), this_month_format) + relativedelta(months=+1)).strftime(format)
+    else:
+        return now().strftime(format)
 
 def next_month(format='%m/%Y'):
-    return (now().replace(day=28) + timedelta(days=4)).strftime(format)
+    this_month_format='%d/%m/%Y'
+
+    return (datetime.strptime(this_month(this_month_format), this_month_format) + relativedelta(months=+1)).strftime(format)
 
 class DateItem(dict):
 
