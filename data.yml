@@ -130,8 +130,25 @@ djs:
       - 'Allen Kerr'
       - 'Nicole Zuckerman'
   - date: 3/2/2017
-    names:
-      - 'TBD'
+   names:
+     - LIVE BAND! Michael Gamble and His Rhythm Serenaers
+     - Nicole Zuckerman (Band Breaks)
+  - date: 3/9/2017
+   names:
+     - Alex Fernandez
+     - Hep Jen
+  - date: 3/16/2017
+   names:
+     - Manu Smith
+     - Sean Krazit
+  - date: 3/23/2017
+   names:
+     - Allen Kerr
+     - Justin Hill
+  - date: 3/30/2017
+   names:
+     - Nirav Sanghani
+     - Dhruv Bhargava
 
 news:
   # - date: mm/dd/yyyy (optional)
@@ -181,3 +198,11 @@ news:
     name: Funky February/March Schedule
     content: "We are closed on February 16th for the annual Russian Festival, so we are extending our February classes to March 2nd. Fortunately, March has five Thursdays, so March classes will run from March 9th - March 30th. "
     hide: False
+  - date: 3/2/2016
+    name: Michael Gamble and the Rhythm Serenaders
+    content: "If you were one of the many Bay Area dancers who attended Lindy Focus, you know the name Michael Gamble. And you know his incredible band The Rhythm Serenders. Even if you haven't made the trek to Lindy Focus you likely have still heard Michael's name. He has become a leader in this music scene, not only with his own band but also with projects like the Big Band Revival which brought back performances of Chick Webb's music that hadn't been heard live in 80 years. <a href='http://www.lindyfocus.com/chickwebb/'>http://www.lindyfocus.com/chickwebb/</a><br><br>Michael Gamble and the Rhythm Serenaders will be gracing us with their presence in our large, beautiful ballroom. And we are beyond excited to swingout to their tunes!!<br><br>Dancing to live music like this has no comparison. It's why Lindy Hop was created and reminds us how much the music and the dance are connected. Don't miss it!"
+    hide: False
+  - date: 3/30/2017
+    name: "DJ Theme Night: Women In Jazz"
+    content: "Placeholder text for focus on Women's night"
+    hide: True
