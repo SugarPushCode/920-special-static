@@ -21,11 +21,11 @@ import pprint
 import yaml
 from django_jinja.backend import Jinja2
 from django_jinja.builtins import DEFAULT_EXTENSIONS
-from path import path
+from path import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = (path(__file__).dirname() / '..').abspath()
+BASE_DIR = (Path(__file__).dirname() / '..').abspath()
 PROJECT_ROOT = (BASE_DIR / '..').abspath()
 
 # Quick-start development settings - unsuitable for production
