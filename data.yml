@@ -130,25 +130,25 @@ djs:
       - 'Allen Kerr'
       - 'Nicole Zuckerman'
   - date: 3/2/2017
-   names:
-     - LIVE BAND! Michael Gamble and His Rhythm Serenaers
-     - Nicole Zuckerman (Band Breaks)
+    names:
+      - LIVE BAND! Michael Gamble and His Rhythm Serenaders
+      - Nicole Zuckerman (Band Breaks)
   - date: 3/9/2017
-   names:
-     - Alex Fernandez
-     - Hep Jen
+    names:
+      - Alex Fernandez
+      - Hep Jen
   - date: 3/16/2017
-   names:
-     - Manu Smith
-     - Sean Krazit
+    names:
+      - Manu Smith
+      - Sean Krazit
   - date: 3/23/2017
-   names:
-     - Allen Kerr
-     - Justin Hill
+    names:
+      - Allen Kerr
+      - Justin Hill
   - date: 3/30/2017
-   names:
-     - Nirav Sanghani
-     - Dhruv Bhargava
+    names:
+      - Nirav Sanghani
+      - Dhruv Bhargava
 
 news:
   # - date: mm/dd/yyyy (optional)
