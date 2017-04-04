@@ -149,7 +149,21 @@ djs:
     names:
       - Nirav Sanghani
       - Dhruv Bhargava
-
+  - date: 4/6/2017
+    names:
+      - Hep Jen
+      - Nicole Zuckerman
+  - date: 4/13/2017
+    names:
+      - Close (Easter)
+  - date: 4/20/2017
+    names:
+      - Allen Kerr
+      - Shannon Lea Watkins
+  - date: 4/27/2017
+    names:
+      - Alex Fernandez
+      - Justin Hill
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
