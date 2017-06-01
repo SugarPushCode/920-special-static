@@ -180,6 +180,26 @@ djs:
     names:
       - Manu Smith
       - Nicole Zuckerman
+  - date: 6/1/2017
+    names:
+      - Allen Kerr
+      - David Aghassi
+  - date: 6/8/2017
+    names:
+      - Alex Fernandez
+      - Nicole Zuckerman
+  - date: 6/15/2017
+    names:
+      - Old School Night with Sharon Ashe
+  - date: 6/22/2017
+    names:
+      - PJ Ryan
+      - Dhruv Bhargava
+  - date: 6/29/2017
+    names:
+      - Open House!
+      - Nirav Sanghani
+      - Sean Krazit
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
