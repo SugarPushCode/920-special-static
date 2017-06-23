@@ -207,7 +207,7 @@ news:
   #   hide: True or False (case sensitive, optional)
   - date: 06/29/2017
     name: Annual Open House!
-    content: Our annual FREE Open House is back once again! Every year we celebrate our community by hosting a free evening of dancing and performances at The 9:20 Special. Invite your non-dancing friends, neighbors, co-workings, cousins, siblings, parents, teachers, friends of friends...anyone who has ever had the slightest interest in this "dancing thing you do." :) \n\n 8:30pm-9:30pm FREE 1-hour beginner Lindy Hop/Swing dance lesson\n\n9:30pm-12:30am FREE social dance to DJ'd swing music in our large, beautiful ballroom\n\n10:15pm-10:30pm FREE performances by our students and instructors. 
+    content: Our annual FREE Open House is back once again! Every year we celebrate our community by hosting a free evening of dancing and performances at The 9:20 Special. Invite your non-dancing friends, neighbors, co-workings, cousins, siblings, parents, teachers, friends of friends...anyone who has ever had the slightest interest in this "dancing thing you do." :) <br><br> 8:30pm-9:30pm FREE 1-hour beginner Lindy Hop/Swing dance lesson<br><br>9:30pm-12:30am FREE social dance to DJ'd swing music in our large, beautiful ballroom<br><br>10:15pm-10:30pm FREE performances by our students and instructors. 
     hide: False
   - date: 4/7/2016
     name: Tamar Korn & Friends
