@@ -207,7 +207,7 @@ news:
   #   hide: True or False (case sensitive, optional)
   - date: 06/29/2017
     name: Free One-Hour beginner Lindy Hop class!
-    content: On Thursday, June 29th, there will be NO 9:00pm Taster Class. Instead, we'll be teaching a one-hour beginner class from 8:30pm to 9:30pm instead!
+    content: On Thursday, June 29th, there will be NO 9:00pm Taster Class. Instead, we'll be teaching a one-hour beginner class from 8:30pm to 9:30pm!
     hide: False
   - date: 06/29/2017
     name: Annual Open House!
