@@ -200,6 +200,23 @@ djs:
       - Open House!
       - Nirav Sanghani
       - Sean Krazit
+  - date: 7/6/2017
+    names:
+      - Manu Smith
+      - Nicole Zuckerman
+  - date: 7/13/2017
+    names:
+      - Allen Kerr
+      -  Misha Zvonkin (New DJ!)
+  - date: 7/20/2017
+    names:
+      - Hep Jen
+      - Nirav Sanghani
+  - date: 7/27/2017
+    names:
+      - Alex Fernandez
+      - Justin Hill
+      - Theme Night - Jimmy Lunceford
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
@@ -211,7 +228,7 @@ news:
     hide: False
   - date: 06/29/2017
     name: Annual Open House!
-    content: Our annual FREE Open House is back once again! Every year we celebrate our community by hosting a free evening of dancing and performances at The 9:20 Special. Invite your non-dancing friends, neighbors, co-workings, cousins, siblings, parents, teachers, friends of friends...anyone who has ever had the slightest interest in this "dancing thing you do." :) <br><br> 8:30pm-9:30pm FREE 1-hour beginner Lindy Hop/Swing dance lesson<br><br>9:30pm-12:30am FREE social dance to DJ'd swing music in our large, beautiful ballroom<br><br>10:15pm-10:30pm FREE performances by our students and instructors. 
+    content: Our annual FREE Open House is back once again! Every year we celebrate our community by hosting a free evening of dancing and performances at The 9:20 Special. Invite your non-dancing friends, neighbors, co-workings, cousins, siblings, parents, teachers, friends of friends...anyone who has ever had the slightest interest in this "dancing thing you do." :) <br><br> 8:30pm-9:30pm FREE 1-hour beginner Lindy Hop/Swing dance lesson<br><br>9:30pm-12:30am FREE social dance to DJ'd swing music in our large, beautiful ballroom<br><br>10:15pm-10:30pm FREE performances by our students and instructors.
     hide: False
   - date: 4/7/2016
     name: Tamar Korn & Friends
