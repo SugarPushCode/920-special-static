@@ -217,6 +217,28 @@ djs:
       - Alex Fernandez
       - Justin Hill
       - Theme Night - Jimmy Lunceford
+  - date: 8/3/2017
+    names:
+      - Justin Hill
+      - Nirav Sanghani
+  - date: 8/10/2017
+    names:
+      - Alex Fernandez
+      - Shannon Lea Watkins
+  - date: 8/17/2017
+    names:
+      - Allen Kerr
+      - David Aghassi
+  - date: 8/24/2017
+    names:
+      - Arnold Cabreza
+      - Dhruv Bhargava
+  - date: 8/31/2017
+    names:
+      - Nicole Zuckerman
+      - Sean Krazit
+      - Theme Night
+
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
