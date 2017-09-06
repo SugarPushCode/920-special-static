@@ -238,7 +238,23 @@ djs:
       - Nicole Zuckerman
       - Sean Krazit
       - Theme Night
-
+  - date: 9/7/2017
+    names:
+      - Nicole Zuckerman
+      - Nathan Dias
+  - date: 9/14/2017
+    names:
+      - Hot Baked Goods CD Release Party!
+      - Band breaks - PJ Ryan
+  - date: 9/21/2017
+    names:
+      - Alex Fernandez
+      - Shannon Lea Watkins
+  - date: 9/28/2017
+    names:
+      - Theme Night! Goodman vs Shaw
+      - Allen Kerr
+      - Hep Jen
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
