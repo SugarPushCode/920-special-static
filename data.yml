@@ -255,6 +255,23 @@ djs:
       - Theme Night! Goodman vs Shaw
       - Allen Kerr
       - Hep Jen
+  - date: 10/5/2017
+    names:
+      - Alex Fernandez
+      - Arnold Cabreza
+  - date: 10/12/2017
+    names:
+      - Justin Hill
+      - Sean Krazit
+  - date: 10/19/2017
+    names:
+      - Allen Kerr
+      - Nicole Zuckerman
+  - date: 10/26/2017
+    names:
+      - Theme Night! Women In Jazz
+      - Dhruv Bhargava
+      - Shannon Lea Watkins
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
