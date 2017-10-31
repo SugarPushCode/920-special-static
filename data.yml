@@ -277,6 +277,10 @@ news:
   #   name: name of the event
   #   content: plain text description
   #   hide: True or False (case sensitive, optional)
+  - date: 11/09/2017
+    name: Live Band! Michael Gamble and the Rhythm Serenaders
+    content: We are beyond honored and thrilled to bring back Michael Gamble and his Rhythm Serenaders to our stage from North Carolina. This band is in town because they'll also be playing at Fog City Stomp that weekend. They're the type of band you could dance to 5 nights in a row and still leave wanting more! Plus, unlike when they were here earlier this year, the incredibly talented vocalist Laura Windley will be joining the lineup as well! We are all in for such a treat! Because of the live band, we're adding $5 to all series classes. Thank you for supporting live jazz!
+    hide: False
   - date: 06/29/2017
     name: Free One-Hour beginner Lindy Hop class!
     content: On Thursday, June 29th, there will be NO 9:00pm Taster Class. Instead, we'll be teaching a one-hour beginner class from 8:30pm to 9:30pm!
