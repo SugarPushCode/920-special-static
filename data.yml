@@ -292,6 +292,20 @@ djs:
     names:
       - Allen Kerr
       - Justin Hill
+  - date: 12/7/2017
+    names:
+      - David Aghassi
+      - Alex Fernandez
+  - date: 12/14/2017
+    names:
+      - Sean Krazit
+      - Shannon Lea Watkins
+  - date: 12/21/2017
+    names:
+      - 'Soul Night with Manu Smith'
+  - date: 12/28/2017
+    names:
+      - 'Closed, Happy Holidays!'
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
