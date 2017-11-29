@@ -1,103 +1,4 @@
 djs:
-  - date: 7/7/2016
-    names:
-      - 'Allen Kerr'
-      - 'Sean Krazit'
-  - date: 7/14/2016
-    names:
-      - 'Alex Fernandez'
-      - 'Justin Hill'
-  - date: 7/21/2016
-    names:
-      - 'Nicole Zuckerman'
-      - 'Dhruv Bhargava'
-  - date: 7/28/2016
-    names:
-      - 'Hep Jen'
-      - 'Nirav Sanghani'
-  - date: 8/4/2016
-    names:
-      - 'Allen Kerr'
-      - 'Nicole Zuckerman'
-  - date: 8/11/2016
-    names:
-      - 'Nirav Sanghani'
-      - 'Sean Krazit'
-  - date: 8/18/2016
-    names:
-      - 'Chad Kubo'
-      - 'Michael Gamble'
-  - date: 8/25/2016
-    names:
-      - 'Dhruv Bhargava'
-      - 'Arnold Cabreza'
-  - date: 9/1/2016
-    names:
-      - 'Alex Fernandez'
-      - 'Nirav Sanghani'
-  - date: 9/8/2016
-    names:
-      - 'Hep Jen'
-      - 'Justin Hill'
-  - date: 9/15/2016
-    names:
-      - 'Allen Kerr'
-      - 'Manu Smith'
-  - date: 9/22/2016
-    names:
-      - 'Ben Nathan'
-      - 'Sean Krazit'
-  - date: 9/29/2016
-    names:
-      - 'Dhruv Bhargava'
-      - 'Nicole Zuckerman'
-  - date: 10/6/2016
-    names:
-      - 'Alex Fernandez'
-  - date: 10/13/2016
-    names:
-      - 'Sean Krazit'
-      - 'Dhruv Bhargava'
-  - date: 10/20/2016
-    names:
-      - 'Allen Kerr'
-      - 'Nathan Dias'
-  - date: 10/27/2016
-    names:
-      - 'Nirav Sanghani'
-      - 'Nicole Zuckerman'
-  - date: 11/3/2016
-    names:
-      - 'Allen Kerr'
-      - 'Dhruv Bhargava'
-  - date: 11/10/2016
-    names:
-      - 'Sean Krazit (Band Breaks)'
-  - date: 11/17/2016
-    names:
-      - 'Manu Smith'
-      - 'Nicole Zuckerman'
-  - date: 11/24/2016
-    names:
-      - 'Closed for Thanksgiving'
-  - date: 12/1/2016
-    names:
-      - 'Allen Kerr'
-      - 'Nirav Sanghani'
-  - date: 12/8/2016
-    names:
-      - 'Alex Fernandez'
-      - 'Nicole Zuckerman'
-  - date: 12/15/2016
-    names:
-      - 'Hep Jen'
-      - 'Sean Krazit'
-  - date: 12/22/2016
-    names:
-      - 'Soul Night with Manu Smith'
-  - date: 12/29/2016
-    names:
-      - 'Closed, Happy Holidays!'
   - date: 1/5/2017
     names:
       - 'Nathan Dias'
@@ -311,6 +212,14 @@ news:
   #   name: name of the event
   #   content: plain text description
   #   hide: True or False (case sensitive, optional)
+  - date: 12/21/2017
+    name: Winter SOULstice
+    content: Our annual Swing & Soul Holiday Party is back once again and, coincidentally, it falls right on the Winter Solstice. How convenient is that?! :-)<br>Join DJs Nicole Zuckerman and Manu Smith for a night filled with your favorites - The Temptations, Stevie Wonder, The Supremes, Marvin Gaye, The Dells, Solomon Burke, The Isley Brothers, The Jackson 5, Mary Wells...OK, you get the point.<br>Dress to impress! As usual, sequins encouraged!
+    hide: False
+  - date: 12/28/2017
+    name: Closed for the holidays
+    content: We will be closed on December 28th and will reopen January 4th. Thank you for a wonderful 2017!
+    hide: False
   - date: 11/09/2017
     name: Live Band! Michael Gamble and the Rhythm Serenaders
     content: We are beyond honored and thrilled to bring back Michael Gamble and his Rhythm Serenaders to our stage from North Carolina. This band is in town because they'll also be playing at Fog City Stomp that weekend. They're the type of band you could dance to 5 nights in a row and still leave wanting more! Plus, unlike when they were here earlier this year, the incredibly talented vocalist Laura Windley will be joining the lineup as well! We are all in for such a treat! Because of the live band, we're adding $5 to all series classes. Thank you for supporting live jazz!
@@ -323,45 +232,6 @@ news:
     name: Annual Open House!
     content: Our annual FREE Open House is back once again! Every year we celebrate our community by hosting a free evening of dancing and performances at The 9:20 Special. Invite your non-dancing friends, neighbors, co-workings, cousins, siblings, parents, teachers, friends of friends...anyone who has ever had the slightest interest in this "dancing thing you do." :) <br><br> 8:30pm-9:30pm FREE 1-hour beginner Lindy Hop/Swing dance lesson<br><br>9:30pm-12:30am FREE social dance to DJ'd swing music in our large, beautiful ballroom<br><br>10:15pm-10:30pm FREE performances by our students and instructors.
     hide: False
-  - date: 4/7/2016
-    name: Tamar Korn & Friends
-    content: Live music! Tamar Korn & Friends will be joining us from New York. We cannot wait to swingout to their swinging tunes! It's $15 at the door ($12 for students/senior/soldiers). If you're taking a series or Solo Jazz class, it's $5 for the dance. More details are on the Facebook event page.
-    hide: True
-  - name: Level 4 has returned!
-    content: "After a two-year hiatus, and back by popular demand, our Level 4 class starts up again this month. If you have been dancing Lindy Hop for a few years, have completed all months of Lindy 3, travel to dance, and practice frequently because you feel like there is so much for you to still work on, this class is for you. The group will be small to maximize direct feedback from the instructors. Teachers will bring their own special ideas to these classes so the series can be taken over and over again, and the classes will be tailored to the needs of the students. The focus of Level 4 is to uncover and work on the elements that are keeping you from being as expressive as you want to be when you dance. An audition is required to take this class. You can audition the first Thursday of the month at 7pm."
-    hide: True
-  - date: 4/28/2016
-    name: Old School Night
-    content: "Save the Date for the next Old School Night at the 9:20 Special!!! 'Revival' attire encouraged but not required. The invitation is open to everyone old and new school, so please invite anyone you miss dancing with."
-    hide: True
-  - date: 6/16/2016
-    name: Summer SOULstice
-    content: "DJs Manu Smith and Nicole Zuckerman will be playing the always-lovable, amazingly-fun, and sure-to-be-danceable swingin' Soul music all night long. Favorites like Aretha Franklin and Sam Cooke are a tiny sampling of what's coming your way!"
-    hide: True
-  - date: 6/30/2016
-    name: Open House
-    content: "It's back! The ever-popular FREE Open House at The 9:20 Special. This is the night we welcome new comers and thank our regulars by providing a free beginner Lindy Hop class, free social dance, free performances, and free raffle. Did we mention it's free?! And so. much. fun."
-    hide: True
-  - date: 8/18/2016
-    name: Old School Night
-    content: "Save the Date for the next Old School Night at the 9:20 Special!!! 'Revival' attire encouraged but not required. The invitation is open to everyone old and new school, so please invite anyone you miss dancing with."
-    hide: True
-  - date: 9/29/2016
-    name: Musicality Classes with (real, live!) Musicians
-    content: "On Thursday, September 29th, *everyone* is invited to join us for two 1-hour classes. Three jazz musicians and two Lindy Hop instructors will be sharing their knowledge of Swing music to help improve your dancing through a better understanding of the music. They'll do this with live and recorded music, demonstration, and dance!<br/>For more information, check out our <a href=https://www.facebook.com/events/1162177577189828/>Facebook event</a>"
-    hide: True
-  - date: 12/25/2016
-    name: Give the gift of dance
-    content: "Share your love of Lindy Hop with your friends and family. Visit our <a href=https://clients.mindbodyonline.com/classic/ws?studioid=41810&stype=42&sLoc=0&giftCardID=62>MindBody page</a> to purchase one today!"
-    hide: False
-  - date: 12/22/2016
-    name: Swing & Soul Night
-    content: "Come party with us for the *last* 9:20 Special of 2016! DJ Manu Smith will be playing the always-lovable, amazingly-fun, and sure-to-be-danceable swingin' Soul music all night long. Favorites like Aretha Franklin and Sam Cooke are a tiny sampling of what's coming your way. <br/>For more details, see the <a href=https://www.facebook.com/events/283515912044732/>Facebook event page</a>"
-    hide: False
-  - date: 12/29/2016
-    name: CLOSED FOR THE HOLIDAYS
-    content: "We're closed the last Thursday of December. Enjoy your time with friends and family and we'll see you in January!"
-    hide: True
   - date: 3/9/2017
     name: Funky February/March Schedule
     content: "We are closed on February 16th for the annual Russian Festival, so we are extending our February classes to March 2nd. Fortunately, March has five Thursdays, so March classes will run from March 9th - March 30th. "
