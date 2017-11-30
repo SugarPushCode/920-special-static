@@ -212,9 +212,9 @@ news:
   #   name: name of the event
   #   content: plain text description
   #   hide: True or False (case sensitive, optional)
-  - date: 02/08/2018
-    name: Closed for Russian Festival
-    content: We'll be closed on Thursday February 8th so the Russian Center can prepare for the <a href="http://russiancentersf.com/index.php/2017/11/18/02-09-2018-30th-annual-russian-festival/">30th Annual Russian Festival</a>
+  - date: 11/30/2017
+    name: DJ Theme Night - Duke Ellington Through the Ages
+    content: With a career spanning more than 50 years, Duke Ellington was one of the 20th century's most prolific song writers and artists. Join DJs Allen Kerr and Justin Hill for a journey through some of the swinginest tunes from Dukes songbook.
     hide: False
   - date: 12/21/2017
     name: Winter SOULstice
@@ -224,9 +224,9 @@ news:
     name: Closed for the holidays
     content: We will be closed on December 28th and will reopen January 4th. Thank you for a wonderful 2017!
     hide: False
-  - date: 11/30/2017
-    name: DJ Theme Night - Duke Ellington Through the Ages
-    content: With a career spanning more than 50 years, Duke Ellington was one of the 20th century's most prolific song writers and artists. Join DJs Allen Kerr and Justin Hill for a journey through some of the swinginest tunes from Dukes songbook.
+  - date: 02/08/2018
+    name: Closed for Russian Festival
+    content: We'll be closed on Thursday February 8th so the Russian Center can prepare for the <a href="http://russiancentersf.com/index.php/2017/11/18/02-09-2018-30th-annual-russian-festival/">30th Annual Russian Festival</a>
     hide: False
   - date: 11/09/2017
     name: Live Band! Michael Gamble and the Rhythm Serenaders
