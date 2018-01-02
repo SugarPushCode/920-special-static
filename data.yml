@@ -207,6 +207,22 @@ djs:
   - date: 12/28/2017
     names:
       - 'Closed, Happy Holidays!'
+  - date: 1/4/2018
+    names:
+      - Arnold Cabreza
+      - Shannon Lea Watkins
+  - date: 1/11/2018
+    names:
+      - Allen Kerr
+      - Nicole Zuckerman
+  - date: 1/18/2018
+    names:
+      - Nathan Dias
+      - Sean Krazit
+  - date: 1/25/2018
+    names:
+      - Dhruv Bhargava
+      - Justin Hill
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
