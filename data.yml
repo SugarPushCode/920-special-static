@@ -223,6 +223,21 @@ djs:
     names:
       - Dhruv Bhargava
       - Justin Hill
+  - date: 2/1/2018
+    names:
+      - Alex Fernandez
+      - PJ Ryan
+  - date: 2/8/2018
+    names:
+      - 'Closed (Russian Festival)'
+  - date: 2/15/2018
+    names:
+      - Allen Kerr
+      - Rachel Phillips
+  - date: 2/22/2018
+    names:
+      - Nicole Zuckerman
+      - Sean Krazit
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
