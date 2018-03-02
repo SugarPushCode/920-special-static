@@ -238,6 +238,25 @@ djs:
     names:
       - Nicole Zuckerman
       - Sean Krazit
+  - date: 3/1/2018
+    names:
+      - Allen Kerr
+      - Nirav Sanghani
+  - date: 3/8/2018
+    names:
+      - Alex Fernandez
+      - Manu Smith
+  - date: 3/15/2018
+    names:
+      - Arnold Cabreza
+      - Hep Jen
+  - date: 3/22/2018
+    names:
+      - Nicole Zuckerman
+      - Shannon Lea Watkins
+  - date: 3/29/2018
+    names:
+      - Closed (Easter)
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
