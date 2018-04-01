@@ -257,6 +257,22 @@ djs:
   - date: 3/29/2018
     names:
       - Closed (Easter)
+  - date: 4/5/2018
+    names:
+      - Candy Jacket Jazz Band
+      - Band Breaks - Allen Kerr
+  - date: 4/12/2018
+    names:
+      - Nicole Zuckerman
+      - Nirav Sanghani
+  - date: 4/19/2018
+    names:
+      - Alex Fernandez
+      - Rachel Phillips
+  - date: 4/26/2018
+    names:
+      - Dhruv Bhargava
+      - PJ Ryan
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
