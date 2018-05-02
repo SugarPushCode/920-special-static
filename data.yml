@@ -273,6 +273,27 @@ djs:
     names:
       - Justin Hill
       - PJ Ryan
+  - date: 5/3/2017
+    names:
+      - Justin Hill
+      - Shannon Lea Watkins
+  - date: 5/10/2017
+    names:
+      - Manu Smith
+      - PJ Ryan
+  - date: 5/17/2017
+    names:
+      - Hep Jen
+      - Nirav Sanghani
+  - date: 5/24/2017
+    names:
+      - Alex Fernandez
+      - Rachel Phillips
+  - date: 5/31/2017
+    names:
+      - Open House!
+      - Allen Kerr
+      - Dhruv Bhargava
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
