@@ -310,6 +310,22 @@ djs:
     names:
       - Manu Smith
       - Nirav Sanghani
+  - date: 07/05/2018
+    names:
+      - Alex Fernandez
+      - Nathan Dias
+  - date: 07/12/2018
+    names:
+      - Dhruv Bhargava
+      - Hep Jen
+  - date: 07/19/2018
+    names:
+      - Justin Hill
+      - Shannon Lea Watkins
+  - date: 07/26/2018
+    names:
+      - Nicole Zuckerman
+      - Rachel Phillips
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
