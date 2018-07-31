@@ -1,212 +1,4 @@
 djs:
-  - date: 1/5/2017
-    names:
-      - 'Nathan Dias'
-      - 'Justin Hill'
-  - date: 1/12/2017
-    names:
-      - 'Alex Fernandez'
-      - 'Hep Jen'
-  - date: 1/19/2017
-    names:
-      - 'Manu Smith'
-      - 'Dhruv Bhargava'
-  - date: 1/26/2017
-    names:
-      - 'Rob Moreland'
-      - 'Nicole Zuckerman'
-  - date: 2/2/2017
-    names:
-      - 'Alex Fernandez'
-      - 'Nirav Sanghani'
-  - date: 2/9/2017
-    names:
-      - 'Arnold Cabreza'
-      - 'Dhruv Bhargava'
-  - date: 2/16/2017
-    names:
-      - 'Closed (Russian Festival)'
-  - date: 2/23/2017
-    names:
-      - 'Allen Kerr'
-      - 'Nicole Zuckerman'
-  - date: 3/2/2017
-    names:
-      - LIVE BAND! Michael Gamble and His Rhythm Serenaders
-      - Nicole Zuckerman (Band Breaks)
-  - date: 3/9/2017
-    names:
-      - Alex Fernandez
-      - Hep Jen
-  - date: 3/16/2017
-    names:
-      - Manu Smith
-      - Sean Krazit
-  - date: 3/23/2017
-    names:
-      - Allen Kerr
-      - Justin Hill
-  - date: 3/30/2017
-    names:
-      - Nirav Sanghani
-      - Dhruv Bhargava
-  - date: 4/6/2017
-    names:
-      - Hep Jen
-      - Nicole Zuckerman
-  - date: 4/13/2017
-    names:
-      - Close (Easter)
-  - date: 4/20/2017
-    names:
-      - Allen Kerr
-      - Shannon Lea Watkins
-  - date: 4/27/2017
-    names:
-      - Alex Fernandez
-      - Justin Hill
-  - date: 5/4/2017
-    names:
-      - Arnold Cabreza
-      - Dhruv Bhargava
-  - date: 5/11/2017
-    names:
-      - Allen Kerr
-      - PJ Ryan
-  - date: 5/18/2017
-    names:
-      - Nathan Dias
-      - Sean Krazit
-  - date: 5/25/2017
-    names:
-      - Manu Smith
-      - Nicole Zuckerman
-  - date: 6/1/2017
-    names:
-      - Allen Kerr
-      - David Aghassi
-  - date: 6/8/2017
-    names:
-      - Alex Fernandez
-      - Nicole Zuckerman
-  - date: 6/15/2017
-    names:
-      - Old School Night with Sharon Ashe
-  - date: 6/22/2017
-    names:
-      - PJ Ryan
-      - Dhruv Bhargava
-  - date: 6/29/2017
-    names:
-      - Open House!
-      - Nirav Sanghani
-      - Sean Krazit
-  - date: 7/6/2017
-    names:
-      - Manu Smith
-      - Nicole Zuckerman
-  - date: 7/13/2017
-    names:
-      - Allen Kerr
-      -  Misha Zvonkin (New DJ!)
-  - date: 7/20/2017
-    names:
-      - Hep Jen
-      - Nirav Sanghani
-  - date: 7/27/2017
-    names:
-      - Alex Fernandez
-      - Justin Hill
-      - Theme Night - Jimmy Lunceford
-  - date: 8/3/2017
-    names:
-      - Justin Hill
-      - Nirav Sanghani
-  - date: 8/10/2017
-    names:
-      - Allen Kerr
-      - Misha Zvonkin
-  - date: 8/17/2017
-    names:
-      - Manu Smith
-      - David Aghassi
-  - date: 8/24/2017
-    names:
-      - Arnold Cabreza
-      - Dhruv Bhargava
-  - date: 8/31/2017
-    names:
-      - Nicole Zuckerman
-      - Sean Krazit
-      - Theme Night
-  - date: 9/7/2017
-    names:
-      - Nicole Zuckerman
-      - Nathan Dias
-  - date: 9/14/2017
-    names:
-      - Hot Baked Goods CD Release Party!
-      - Band breaks - PJ Ryan
-  - date: 9/21/2017
-    names:
-      - Alex Fernandez
-      - Shannon Lea Watkins
-  - date: 9/28/2017
-    names:
-      - Theme Night! Goodman vs Shaw
-      - Allen Kerr
-      - Hep Jen
-  - date: 10/5/2017
-    names:
-      - Alex Fernandez
-      - Arnold Cabreza
-  - date: 10/12/2017
-    names:
-      - Justin Hill
-      - PJ Ryan
-  - date: 10/19/2017
-    names:
-      - Allen Kerr
-      - Nicole Zuckerman
-  - date: 10/26/2017
-    names:
-      - Theme Night! Women In Jazz
-      - Dhruv Bhargava
-      - Shannon Lea Watkins
-  - date: 11/2/2017
-    names:
-      - David Aghassi
-      - Nicole Zuckerman
-  - date: 11/9/2017
-    names:
-      - Fog City Stomp Pre-Party
-      - Live Band - Michael Gamble and the Rhythm Serenaders
-      - Band Breaks - Alex Fernandez
-  - date: 11/16/2017
-    names:
-      - Hep Jen
-      - PJ Ryan
-  - date: 11/23/2017
-    names:
-      - Closed for Thanksgiving
-  - date: 11/30/2017
-    names:
-      - Allen Kerr
-      - Justin Hill
-  - date: 12/7/2017
-    names:
-      - David Aghassi
-      - Alex Fernandez
-  - date: 12/14/2017
-    names:
-      - Sean Krazit
-      - Shannon Lea Watkins
-  - date: 12/21/2017
-    names:
-      - 'Soul Night with Manu Smith & Nicole Zuckerman'
-  - date: 12/28/2017
-    names:
-      - 'Closed, Happy Holidays!'
   - date: 1/4/2018
     names:
       - Arnold Cabreza
@@ -326,6 +118,26 @@ djs:
     names:
       - Nicole Zuckerman
       - Rachel Phillips
+  - date: 08/02/2018
+    names:
+      - Allen Kerr
+      - Dhruv Bhargava
+  - date: 08/09/2018
+    names:
+      - Arnold Cabreza
+      - Sean Krazit
+  - date: 08/16/2018
+    names:
+      - Dhruv Bhargava
+      - Rachel Phillips
+  - date: 08/23/2018
+    names:
+      - Manu Smith
+      - Nirav Sanghani
+  - date: 08/30/2018
+    names:
+      - Alex Fernandez
+      - Hep Jen
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
