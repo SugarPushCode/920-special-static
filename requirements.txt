@@ -11,6 +11,6 @@ django-pipeline-compass
 path.py
 libsass
 toolz
-sendgrid
+sendgrid==2.2.1
 tzlocal
 python-dateutil
