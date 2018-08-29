@@ -35,7 +35,7 @@ PROJECT_ROOT = (BASE_DIR / '..').abspath()
 SECRET_KEY = '5@l^^lozn5d41x1iiotg#=!g#osewcc1mf8x4em&u-htb-9eae'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(int(environ.get('DEBUG', False)))
+DEBUG = bool(environ.get('DEBUG', 0))
 print(DEBUG)
 ALLOWED_HOSTS = ['*', ]
 
