@@ -155,6 +155,22 @@ djs:
     names:
       - PJ Ryan
       - Shannon Lea Watkins
+  - date: 10/04/2018
+    names:
+      - Chelsea Dole
+      - Rachel Phillips
+  - date: 10/11/2018
+    names:
+      - Alex Fernandez
+      - Sean Krazit
+  - date: 10/18/2018
+    names:
+      - Allen Kerr
+      - Justin Hill
+  - date: 10/25/2018
+    names:
+      - Hep Jen
+      - Dhruv Bhargava
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
