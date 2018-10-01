@@ -245,7 +245,8 @@ with open('teacher_schedule.csv') as schedule:
                     else:
                         name = class_name
                         print('Unknown class type: ' + class_name)
-                d.setdefault(time, {})[name] = value
+                if value:
+                    d.setdefault(time, {})[name] = value
 
 SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
 SENDGRID_USERNAME = environ.get('SENDGRID_USERNAME')
