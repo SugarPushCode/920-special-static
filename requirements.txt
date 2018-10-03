@@ -2,7 +2,7 @@ gunicorn
 static
 futures
 uwsgi
-Django==2.1
+django ~> 2.1.2
 jinja2
 pyyaml
 django_jinja
