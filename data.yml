@@ -171,6 +171,25 @@ djs:
     names:
       - Hep Jen
       - Dhruv Bhargava
+  - date: 11/01/2018
+    names:
+      - Arnold Cabreza
+      - Shannon Lea Watkins
+  - date: 11/08/2018
+    names:
+      - Live Band - Paul Cosentino & Friends
+      - Band Breaks - Allen Kerr
+  - date: 11/15/2018
+    names:
+      - Justin Hill
+      - Nicole Zuckerman
+  - date: 11/22/2018
+    names:
+      - Closed (Thanksgiving)
+  - date: 11/29/2018
+    names:
+      - Alex Fernandez
+      - Nirav Sanghani
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
