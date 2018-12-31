@@ -204,6 +204,26 @@ djs:
   - date: 12/27/2018
     names:
       - Closed - Holidays
+  - date: 01/03/2019
+    names:
+      - David Aghassi
+      - Rachel Phillips
+  - date: 01/10/2019
+    names:
+      - Allen Kerr
+      - Tracy Lee
+  - date: 01/17/2019
+    names:
+      - Alex Fernandez
+      - Hep Jen
+  - date: 01/24/2019
+    names:
+      - Rebecca Berman
+      - Sean Krazit
+  - date: 01/31/2019
+    names:
+      - Dhruv Bhargava
+      - Justin Hill
 
 news:
   # - date: mm/dd/yyyy (optional)
