@@ -224,7 +224,21 @@ djs:
     names:
       - Dhruv Bhargava
       - Justin Hill
-
+  - date: 02/07/2019
+    names:
+      - Shannon Lea Watkins
+      - Tracy Lee
+  - date: 02/14/2019
+    names:
+      - Allen Kerr
+      - Dhruv Bhargava
+  - date: 02/21/2019
+    names:
+      - Alex Fernandez
+      - Arnold Cabreza
+  - date: 02/28/2019
+    names:
+      - Closed - Russian Festival
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
