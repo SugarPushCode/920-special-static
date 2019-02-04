@@ -244,13 +244,13 @@ news:
   #   name: name of the event
   #   content: plain text description
   #   hide: True or False (case sensitive, optional)
-  - date: 2/28/2019
-    name: Closed for the annual Russian Festival
-    content: We'll be closed on the last Thursday in February, the 28th, for the Russian Center's annual Russian Festival. February series classes end on February 21st.
-    hide: False
   - date: 2/8/2019
     name: February series started January 31st!
     content: The February classes started last week, 1/31. This week, 2/7, will be Week 2 of the series.
+    hide: False
+  - date: 2/28/2019
+    name: Closed for the annual Russian Festival
+    content: We'll be closed on the last Thursday in February, the 28th, for the Russian Center's annual Russian Festival. February series classes end on February 21st.
     hide: False
   - date: 1/31/2019
     name: February series begins January 31st!
