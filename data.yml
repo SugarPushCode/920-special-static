@@ -246,7 +246,7 @@ news:
   #   hide: True or False (case sensitive, optional)
   - date: 2/8/2019
     name: February series started January 31st!
-    content: "If you missed class last week, here are your options: Level 1 - you can take the Taster Class at 9:30pm and join the next series starting March 7th. Level 2, Level 3, Solo Jazz - If you’re a returning student, we’ll make an exception because of the funky schedule and allow you to join starting this week as long as you watch the recap videos from our <a href="https://www.youtube.com/user/920Special">YouTube channel</a> from last week’s class. Email info@920special.com with questions."
+    content: 'If you missed class last week, here are your options: Level 1 - you can take the Taster Class at 9:30pm and join the next series starting March 7th. Level 2, Level 3, Solo Jazz - If you’re a returning student, we’ll make an exception because of the funky schedule and allow you to join starting this week as long as you watch the recap videos from our <a href="https://www.youtube.com/user/920Special">YouTube channel</a> from last week’s class. Email info@920special.com with questions.'
     hide: False
   - date: 2/28/2019
     name: Closed for the annual Russian Festival
