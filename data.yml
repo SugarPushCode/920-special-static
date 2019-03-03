@@ -239,6 +239,22 @@ djs:
   - date: 02/28/2019
     names:
       - Closed - Russian Festival
+  - date: 03/07/2019
+    names:
+      - Hep Jen
+      - Rachel Phillips
+  - date: 03/14/2019
+    names:
+      - Alex Fernandez
+      - Manu Smith
+  - date: 03/21/2019
+    names:
+      - Dhruv Bhargava
+      - Arnold Cabreza
+  - date: 03/28/2019
+    names:
+      - Allen Kerr
+      - Benji Ng
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
