@@ -276,7 +276,7 @@ news:
   #   content: plain text description
   #   hide: True or False (case sensitive, optional)
 - date: 4/11/2019
-    name: Live music - Dandy Wellington
+    name: Live music with Dandy Wellington!
     content: Dandy Wellington and His Band are joining us LIVE on Thurday, 4/11/19. Tickets are sold at the door only. $15 general admission / $12 full-time students, seniors 60+, military.
     hide: False
 - date: 2/8/2019
