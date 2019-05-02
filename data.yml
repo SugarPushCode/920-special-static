@@ -270,6 +270,27 @@ djs:
     names:
       - Dhruv Bhargava
       - Rachel Phillips
+  - date: 05/02/2019
+    names:
+      - Arnold Cabreza
+      - Benji Ng
+  - date: 05/09/2019
+    names:
+      - Rachel Phillips
+      - Nathan Dias
+  - date: 05/16/2019
+    names:
+      - Manu Smith
+      - Arnold Cabreza
+  - date: 05/23/2019
+    names:
+      - Tracy Lee
+      - Hep Jen
+  - date: 05/30/2019
+    names:
+      - Open House!
+      - Allen Kerr
+      - Alex Fernandez
 news:
   # - date: mm/dd/yyyy (optional)
   #   name: name of the event
