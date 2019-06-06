@@ -311,6 +311,10 @@ news:
 #   name: name of the event
   #   content: plain text description
   #   hide: True or False (case sensitive, optional)
+  - date: 7/11/2019
+    name: Closed July 4th!
+    content: Sorry everyone, but we'll be closed for the 4th of July. Our July class series will begin July 11th and run until August 1st.
+    hide: False
   - date: 05/30/2019
     name: Annual Open House!
     content: Our annual FREE Open House is back once again! Every year we celebrate our community by hosting a free evening of dancing and performances at The 9:20 Special. Invite your non-dancing friends, neighbors, co-workings, cousins, siblings, parents, teachers, friends of friends...anyone who has ever had the slightest interest in this "dancing thing you do." :) <br><br> 8:30pm-9:30pm FREE 1-hour beginner Lindy Hop/Swing dance lesson<br><br>9:30pm-midnight FREE social dance to DJ'd swing music in our large, beautiful ballroom<br><br>10:15pm-10:30pm FREE performances by our students and instructors.
