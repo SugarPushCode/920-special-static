@@ -309,11 +309,11 @@ djs:
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
-  #   content: plain text description
-  #   hide: True or False (case sensitive, optional)
+#   content: plain text description
+#   hide: True or False (case sensitive, optional)
   - date: 6/27/2019
     name: Fast Room!
-    content: DJ'd fast music will be played in the Gold Room from 10:30pm-11:30pm this Thursday! Come Bal, Shag, and fast Lindy with us! (Varied tempos will continue in the Ballroom)
+    content: "DJ'd fast music will be played in the Gold Room from 10:30pm-11:30pm this Thursday! Come Bal, Shag, and fast Lindy with us! (Varied tempos will continue in the Ballroom)"
     hide: False
   - date: 7/11/2019
     name: Closed July 4th!
