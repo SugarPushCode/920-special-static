@@ -306,6 +306,21 @@ djs:
     names:
       - Allen Kerr
       - Suzanne Van Arsdale
+  - date: 07/04/2019
+    names:
+      - Closed (Independence Day)
+  - date: 07/11/2019
+    names:
+      - Arnold Cabreza
+      - Shannon Lea Watkins
+  - date: 07/18/2019
+    names:
+      - Alex Fernandez
+      - Suzanne Van Arsdale
+  - date: 07/25/2019
+    names:
+      - Allen Kerr
+      - Dhruv Bhargava
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
