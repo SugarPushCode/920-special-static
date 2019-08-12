@@ -336,10 +336,10 @@ djs:
   - date: 08/22/2019
     names:
       - Dhruv Bhargava
-      - Manu Smith
+      - Hep Jen
   - date: 08/29/2019
     names:
-      - Hep Jen
+      - Manu Smith
       - Tracy Lee
 news:
 # - date: mm/dd/yyyy (optional)
@@ -348,7 +348,7 @@ news:
 #   hide: True or False (case sensitive, optional)
   - date: 8/8/2019
     name: "July series extends to 8/1"
-    content: "Our July series will continue through August 1st. and our August series will begin August 8th. Registration will open soon!"  
+    content: "Our July series will continue through August 1st. and our August series will begin August 8th. Registration will open soon!"
   - date: 7/27/2019
     name: Fast Room!
     content: "DJ'd fast music will be played in the Gold Room from 10:30pm-11:30pm this Thursday! Come Bal, Shag, and fast Lindy with us! (Varied tempos will continue in the Ballroom)"
