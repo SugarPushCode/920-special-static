@@ -341,6 +341,22 @@ djs:
     names:
       - Manu Smith
       - Tracy Lee
+  - date: 09/05/2019
+    names:
+      - Dhruv Bhargava
+      - Benji Ng
+  - date: 09/12/2019
+    names:
+      - Arnold Cabreza
+      - Tracy Lee
+  - date: 09/19/2019
+    names:
+      - Allen Kerr
+      - Suzanne Van Arsdale
+  - date: 09/26/2019
+    names:
+      - Alex Fernandez
+      - Hep Jen
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
