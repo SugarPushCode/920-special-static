@@ -357,6 +357,26 @@ djs:
     names:
       - Alex Fernandez
       - Hep Jen
+  - date: 10/03/2019
+    names:
+      - Dhruv Bhargava
+      - Benji Ng
+  - date: 10/10/2019
+    names:
+      - Allen Kerr
+      - Rachel Phillips
+  - date: 10/17/2019
+    names:
+      - Hep Jen
+      - Suzanne Van Arsdale
+  - date: 10/24/2019
+    names:
+      - Justin Hill
+      - Tracy Lee
+  - date: 10/31/2019
+    names:
+      - Nicole Zuckerman
+      - Sean Krazit
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
