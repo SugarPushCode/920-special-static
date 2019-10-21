@@ -14,3 +14,4 @@ toolz
 sendgrid==2.2.1
 tzlocal
 python-dateutil
+requests
