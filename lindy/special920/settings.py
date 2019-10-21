@@ -251,5 +251,6 @@ with open('teacher_schedule.csv') as schedule:
 SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
 SENDGRID_USERNAME = environ.get('SENDGRID_USERNAME')
 
+GOOGLE_RECAPTCHA_SECRET_KEY = environ.get('GOOGLE_RECAPTCHA_SECRET_KEY')
 CONTACT_EMAIL = 'info@920special.com'
 DEBUG_EMAIL = environ.get('DEBUG_EMAIL')
