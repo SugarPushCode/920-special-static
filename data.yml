@@ -382,6 +382,15 @@ news:
 #   name: name of the event
 #   content: plain text description
 #   hide: True or False (case sensitive, optional)
+  - date: 12/26/2019
+    name: "Closed for the Holidays"
+    content: "We're closed on December 26th & January 2nd. See you January 9th for the first series of 2020!"
+  - date: 11/28/2019
+    name: "Closed for Thanksgiving"
+    content: "Happy Thanksgiving everyone!"
+  - date: 10/31/2019
+    name: "Halloween Bash"
+    content: "Join us for an evening of Halloween fun. Check the <a href=https://www.facebook.com/events/687093878419994/>Facebook event page</a> for details."
   - date: 10/19/2019
     name: "Support Gaucho fund a new album"
     content: "One of our favorite local Jazz bands, <a href='https://www.gauchojazz.com/'>Gaucho</a>, is raising funds for a new album. If you'd like to donate, visit their <a href='https://www.gofundme.com/f/gaucho-jazz-producing-new-recording'>GoFundMe campaign page</a>. Read more about Gaucho in their recent write-up in the SF Chronicle: <a href='https://datebook.sfchronicle.com/music/gaucho-jazz-still-swings-the-mission-after-17-years'>Gaucho Jazz Still Swings The Mission After 17 Years</a>."
