@@ -377,6 +377,21 @@ djs:
     names:
       - Nicole Zuckerman
       - Sean Krazit
+  - date: 11/07/2019
+    names:
+      - Alex Fernandez
+      - Arnold Cabreza
+  - date: 11/14/2019
+    names:
+      - Allen Kerr
+      - Suzanne Van Arsdale
+  - date: 11/21/2019
+    names:
+      - Hep Jen
+      - Rachel Phillips
+  - date: 11/28/2019
+    names:
+      - Closed (Thanksgiving)
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
