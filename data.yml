@@ -392,6 +392,21 @@ djs:
   - date: 11/28/2019
     names:
       - Closed (Thanksgiving)
+  - date: 12/05/2019
+      names:
+        - PJ Ryan
+        - Dhruv Bhargava
+  - date: 12/12/2019
+      names:
+        - Alex Fernandez
+        - Tracy Lee
+  - date: 12/19/2019
+      names:
+        - Winter SOULstice Party
+        - Manu Smith
+  - date: 12/26/2019
+      names:
+        - Closed - Holidays
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
