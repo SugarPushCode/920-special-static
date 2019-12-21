@@ -407,7 +407,7 @@ djs:
   - date: 12/26/2019
     names:
       - Closed - Holidays
-  - date: 01/02/2019
+  - date: 01/02/2020
     names:
       - Closed - Holidays
 news:
@@ -418,7 +418,7 @@ news:
   - date: 12/26/2019
     name: "Closed day after Christmas"
     content: "We're closed on December 26th. Happy Holidays!"
-  - date: 01/02/2019
+  - date: 01/02/2020
     name: "Closed day after New Year's Day"
     content: "We're closed on January 2nd."
   - date: 12/19/2019
