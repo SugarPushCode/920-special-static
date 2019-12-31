@@ -410,6 +410,22 @@ djs:
   - date: 01/02/2020
     names:
       - Closed - Holidays
+  - date: 01/09/2020
+    names:
+      - DJ Superheidi
+      - Allen Kerr
+  - date: 01/16/2020
+    names:
+      - Hep Jen
+      - Tracy Lee
+  - date: 01/23/2020
+    names:
+      - Alex Fernandez
+      - Benji Ng
+  - date: 01/30/2020
+    names:
+      - Dhruv Bhargava
+      - Arnold Cabreza
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
