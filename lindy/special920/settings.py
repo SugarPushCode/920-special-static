@@ -194,18 +194,18 @@ STATIC_ROOT = PROJECT_ROOT / 'static'
 HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
 
 class_desc_dict = {
-    'Lindy 1A': '6-count + 8-count',
-    'Lindy 1B': '8-count + Charleston',
-    'Lindy 1C': '6-count + Charleston',
-    'Lindy 2A': 'Swingouts',
-    'Lindy 2B': 'Musicality',
-    'Lindy 2C': 'Charleston',
-    'Lindy 2D': 'Classics',
-    'Lindy 3A': 'Technique',
-    'Lindy 3B': 'Musicality',
-    'Lindy 3C': 'Beyond Lindy Hop',
-    'Lindy 3D': 'Vocabulary',
-    'Lindy 3P': 'Performance Class',
+    'Level 1A': '6-count + 8-count',
+    'Level 1B': '8-count + Charleston',
+    'Level 1C': '6-count + Charleston',
+    'Level 2A': 'Swingouts',
+    'Level 2B': 'Musicality',
+    'Level 2C': 'Charleston',
+    'Level 2D': 'Classics',
+    'Level 3A': 'Technique',
+    'Level 3B': 'Musicality',
+    'Level 3C': 'Beyond Lindy Hop',
+    'Level 3D': 'Vocabulary',
+    'Level 3P': 'Performance Class',
 }
 
 with open('teacher_schedule.csv') as schedule:
@@ -227,7 +227,7 @@ with open('teacher_schedule.csv') as schedule:
                     value = '0' + value
                 TEACHER_SCHEDULE[value] = d
             else:
-                # eg. Lindy 1@7:20
+                # eg. Level 1@7:20
                 name, time = key.split('@')
 
                 # In the instructor field of the CSV file,
@@ -236,7 +236,7 @@ with open('teacher_schedule.csv') as schedule:
                 if ':' in value:
                     section, value = value.split(':')
 
-                    # 'Lindy 1A'
+                    # 'Level 1A'
                     class_name = name + section
 
                     # Look up the description in the dictionary

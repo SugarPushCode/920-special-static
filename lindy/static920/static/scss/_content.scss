@@ -53,3 +53,9 @@ ul.image-grid {
 		margin: $global-margin $global-margin 0 0;
 	}
 }
+
+td {
+	vertical-align: top;
+	text-align: left;
+  	border: $table-border;
+}
