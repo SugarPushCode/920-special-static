@@ -441,6 +441,22 @@ djs:
     names:
       - Allen Kerr
       - Dhruv Bhargava
+  - date: 03/05/2020
+    names:
+      - Dhruv Bhargava
+      - Suzanne Van Arsdale
+  - date: 03/12/2020
+    names:
+      - Benji Ng
+      - Hep Jen
+  - date: 03/19/2020
+    names:
+      - Alex Fernandez
+      - Arnold Cabreza
+  - date: 03/26/2020
+    names:
+      - Allen Kerr
+
 news:
 # - date: mm/dd/yyyy (optional)
 #   name: name of the event
