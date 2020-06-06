@@ -23,6 +23,9 @@ from django_jinja.backend import Jinja2
 from django_jinja.builtins import DEFAULT_EXTENSIONS
 from path import Path
 
+# disable admin site by default
+ADMIN_ENABLED = False
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = (Path(__file__).dirname() / '..').abspath()
@@ -56,13 +59,12 @@ INSTALLED_APPS = [
     # 'djangobower',
 ]
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -92,19 +94,19 @@ TEMPLATES = [
             ],
         }
     },
-    # {
-    #     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    #     'DIRS': [],
-    #     'APP_DIRS': True,
-    #     'OPTIONS': {
-    #         'context_processors': [
-    #             'django.template.context_processors.debug',
-    #             'django.template.context_processors.request',
-    #             'django.contrib.auth.context_processors.auth',
-    #             'django.contrib.messages.context_processors.messages',
-    #         ],
-    #     },
-    # },
+     {
+         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+         'DIRS': [],
+         'APP_DIRS': True,
+         'OPTIONS': {
+             'context_processors': [
+                 'django.template.context_processors.debug',
+                 'django.template.context_processors.request',
+                 'django.contrib.auth.context_processors.auth',
+                 'django.contrib.messages.context_processors.messages',
+             ],
+         },
+     },
 ]
 
 WSGI_APPLICATION = 'lindy.special920.wsgi.application'
