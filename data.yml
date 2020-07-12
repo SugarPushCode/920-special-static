@@ -171,11 +171,355 @@ djs:
     names:
       - Hep Jen
       - Dhruv Bhargava
+  - date: 11/01/2018
+    names:
+      - Arnold Cabreza
+      - Shannon Lea Watkins
+  - date: 11/08/2018
+    names:
+      - Live Band - Paul Cosentino & Friends
+      - Band Breaks - Allen Kerr
+  - date: 11/15/2018
+    names:
+      - Justin Hill
+      - Nicole Zuckerman
+  - date: 11/22/2018
+    names:
+      - Closed (Thanksgiving)
+  - date: 11/29/2018
+    names:
+      - Alex Fernandez
+      - Nirav Sanghani
+  - date: 12/06/2018
+    names:
+      - Rachel Phillips
+      - Alex Fernandez
+  - date: 12/13/2018
+    names:
+      - Hep Jen
+      - Dhruv Bhargava
+  - date: 12/20/2018
+    names:
+      - Soul Night - Manu Smith
+  - date: 12/27/2018
+    names:
+      - Closed - Holidays
+  - date: 01/03/2019
+    names:
+      - David Aghassi
+      - Rachel Phillips
+  - date: 01/10/2019
+    names:
+      - Allen Kerr
+      - Tracy Lee
+  - date: 01/17/2019
+    names:
+      - Alex Fernandez
+      - Hep Jen
+  - date: 01/24/2019
+    names:
+      - Rebecca Berman
+      - Sean Krazit
+  - date: 01/31/2019
+    names:
+      - Dhruv Bhargava
+      - Justin Hill
+  - date: 02/07/2019
+    names:
+      - Shannon Lea Watkins
+      - Tracy Lee
+  - date: 02/14/2019
+    names:
+      - Allen Kerr
+      - Dhruv Bhargava
+  - date: 02/21/2019
+    names:
+      - Alex Fernandez
+      - Arnold Cabreza
+  - date: 02/28/2019
+    names:
+      - Closed - Russian Festival
+  - date: 03/07/2019
+    names:
+      - Hep Jen
+      - Rachel Phillips
+  - date: 03/14/2019
+    names:
+      - Tracy Lee
+      - Manu Smith
+  - date: 03/21/2019
+    names:
+      - Dhruv Bhargava
+      - Arnold Cabreza
+  - date: 03/28/2019
+    names:
+      - Allen Kerr
+      - Benji Ng
+  - date: 04/04/2019
+    names:
+      - Alex Fernandez
+      - Tracy Lee
+  - date: 04/11/2019
+    names:
+      - Live Band with Dandy Wellington
+      - Justin Hill (Band Breaks)
+  - date: 04/18/2019
+    names:
+      - Closed - Easter
+  - date: 04/25/2019
+    names:
+      - Dhruv Bhargava
+      - Rachel Phillips
+  - date: 05/02/2019
+    names:
+      - Arnold Cabreza
+      - Benji Ng
+  - date: 05/09/2019
+    names:
+      - Rachel Phillips
+      - Nathan Dias
+  - date: 05/16/2019
+    names:
+      - Manu Smith
+      - Arnold Cabreza
+  - date: 05/23/2019
+    names:
+      - Tracy Lee
+      - Hep Jen
+  - date: 05/30/2019
+    names:
+      - Open House with Allen Kerr
+      - Alex Fernandez
+  - date: 06/06/2019
+    names:
+      - Rachel Phillips
+      - Tracy Lee
+  - date: 06/13/2019
+    names:
+      - Alex Fernandez
+      - Dhruv Bhargava
+  - date: 06/20/2019
+    names:
+      - Nicole Zuckerman
+      - Sean Krazit
+  - date: 06/27/2019
+    names:
+      - Allen Kerr
+      - Suzanne Van Arsdale
+  - date: 07/04/2019
+    names:
+      - Closed (Independence Day)
+  - date: 07/11/2019
+    names:
+      - Arnold Cabreza
+      - Shannon Lea Watkins
+  - date: 07/18/2019
+    names:
+      - Alex Fernandez
+      - Suzanne Van Arsdale
+  - date: 07/25/2019
+    names:
+      - Allen Kerr
+      - Dhruv Bhargava
+  - date: 08/01/2019
+    names:
+      - Nicole Zuckerman
+      - Suzanne Van Arsdale
+  - date: 08/08/2019
+    names:
+      - Alex Fernandez
+      - Benji Ng
+  - date: 08/15/2019
+    names:
+      - Rachel Phillips
+      - Sean Krazit
+  - date: 08/22/2019
+    names:
+      - Dhruv Bhargava
+      - Hep Jen
+  - date: 08/29/2019
+    names:
+      - Manu Smith
+      - Tracy Lee
+  - date: 09/05/2019
+    names:
+      - Dhruv Bhargava
+      - Benji Ng
+  - date: 09/12/2019
+    names:
+      - Arnold Cabreza
+      - Tracy Lee
+  - date: 09/19/2019
+    names:
+      - Allen Kerr
+      - Suzanne Van Arsdale
+  - date: 09/26/2019
+    names:
+      - Alex Fernandez
+      - Hep Jen
+  - date: 10/03/2019
+    names:
+      - Dhruv Bhargava
+      - Benji Ng
+  - date: 10/10/2019
+    names:
+      - Allen Kerr
+      - Rachel Phillips
+  - date: 10/17/2019
+    names:
+      - Hep Jen
+      - Suzanne Van Arsdale
+  - date: 10/24/2019
+    names:
+      - Justin Hill
+      - Tracy Lee
+  - date: 10/31/2019
+    names:
+      - Nicole Zuckerman
+      - Sean Krazit
+  - date: 11/07/2019
+    names:
+      - Alex Fernandez
+      - Arnold Cabreza
+  - date: 11/14/2019
+    names:
+      - Allen Kerr
+      - Suzanne Van Arsdale
+  - date: 11/21/2019
+    names:
+      - Hep Jen
+      - Rachel Phillips
+  - date: 11/28/2019
+    names:
+      - Closed (Thanksgiving)
+  - date: 12/05/2019
+    names:
+      - PJ Ryan
+      - Dhruv Bhargava
+  - date: 12/12/2019
+    names:
+      - Alex Fernandez
+      - Tracy Lee
+  - date: 12/19/2019
+    names:
+      - Winter SOULstice Party
+      - Manu Smith
+  - date: 12/26/2019
+    names:
+      - Closed - Holidays
+  - date: 01/02/2020
+    names:
+      - Closed - Holidays
+  - date: 01/09/2020
+    names:
+      - DJ Superheidi
+      - Allen Kerr
+  - date: 01/16/2020
+    names:
+      - Hep Jen
+      - Tracy Lee
+  - date: 01/23/2020
+    names:
+      - Alex Fernandez
+      - Arnold Cabreza
+  - date: 01/30/2020
+    names:
+      - Dhruv Bhargava
+      - Benji Ng
+  - date: 02/06/2020
+    names:
+      - Alex Fernandez
+      - Hep Jen
+  - date: 02/13/2020
+    names:
+      - Benji Ng
+      - Suzanne Van Arsdale
+  - date: 02/20/2020
+    names:
+      - Closed - Russian Festival
+  - date: 02/27/2020
+    names:
+      - Allen Kerr
+      - Dhruv Bhargava
+  - date: 03/05/2020
+    names:
+      - Dhruv Bhargava
+      - Suzanne Van Arsdale
+  - date: 03/12/2020
+    names:
+      - Closed
+  - date: 03/19/2020
+    names:
+      - Closed
+  - date: 03/26/2020
+    names:
+      - Closed
+
 news:
-  # - date: mm/dd/yyyy (optional)
-  #   name: name of the event
-  #   content: plain text description
-  #   hide: True or False (case sensitive, optional)
+# - date: mm/dd/yyyy (optional)
+#   name: name of the event
+#   content: plain text description
+#   hide: True or False (case sensitive, optional)
+  - date: 3/31/2020
+    name: "Closed for March"
+    content: "Because of the recent recommendations from the Department of Public Health regarding COVID-19, we've decided that The 9:20 Special will be on hiatus effective immediately. We feel it's important to do our part by not providing an opportunity for this virus to spread at our event. At the end of the month, we'll determine if we can reopen in April. For more details, please read <a href='https://conta.cc/2IzXr4m'>our recent newsletter</a>."
+    hide: False
+  - date: 12/26/2019
+    name: "Closed day after Christmas"
+    content: "We're closed on December 26th. Happy Holidays!"
+  - date: 01/02/2020
+    name: "Closed day after New Year's Day"
+    content: "We're closed on January 2nd."
+  - date: 12/19/2019
+    name: "Winter SOULstice Party"
+    content: "Our annual Swing & Soul Holiday Party is back once again and, it falls two days after the Winter Solstice. How convenient is that?! :-)<br>Join DJs Manu Smith for a night filled with your favorites - The Temptations, Stevie Wonder, The Supremes, Marvin Gaye, The Dells, Solomon Burke, The Isley Brothers, The Jackson 5, Mary Wells...OK, you get the point.<br>Dress to impress! As usual, sequins encouraged!"
+  - date: 11/28/2019
+    name: "Closed for Thanksgiving"
+    content: "Happy Thanksgiving everyone!"
+  - date: 10/31/2019
+    name: "Halloween Bash"
+    content: "Join us for an evening of Halloween fun. All-levels drop-in classess including Sneaky Steals, Spooky Solo Jazz and 'Thriller' choreography. After classes, check out the photo booth, enter the costume contest and watch the 'Thriller' performance. Check the <a href=https://www.facebook.com/events/687093878419994/>Facebook event page</a> for details."
+  - date: 10/19/2019
+    name: "Support Gaucho fund a new album"
+    content: "One of our favorite local Jazz bands, <a href='https://www.gauchojazz.com/'>Gaucho</a>, is raising funds for a new album. If you'd like to donate, visit their <a href='https://www.gofundme.com/f/gaucho-jazz-producing-new-recording'>GoFundMe campaign page</a>. Read more about Gaucho in their recent write-up in the SF Chronicle: <a href='https://datebook.sfchronicle.com/music/gaucho-jazz-still-swings-the-mission-after-17-years'>Gaucho Jazz Still Swings The Mission After 17 Years</a>."
+  - date: 8/8/2019
+    name: "July series extends to 8/1"
+    content: "Our July series will continue through August 1st. and our August series will begin August 8th. Registration will open soon!"
+  - date: 7/27/2019
+    name: Fast Room!
+    content: "DJ'd fast music will be played in the Gold Room from 10:30pm-11:30pm this Thursday! Come Bal, Shag, and fast Lindy with us! (Varied tempos will continue in the Ballroom)"
+    hide: False
+  - date: 7/11/2019
+    name: Closed July 4th!
+    content: Sorry everyone, but we'll be closed for the 4th of July. Our July class series will begin July 11th and run until August 1st.
+    hide: False
+  - date: 05/30/2019
+    name: Annual Open House!
+    content: Our annual FREE Open House is back once again! Every year we celebrate our community by hosting a free evening of dancing and performances at The 9:20 Special. Invite your non-dancing friends, neighbors, co-workings, cousins, siblings, parents, teachers, friends of friends...anyone who has ever had the slightest interest in this "dancing thing you do." :) <br><br> 8:30pm-9:30pm FREE 1-hour beginner Lindy Hop/Swing dance lesson<br><br>9:30pm-midnight FREE social dance to DJ'd swing music in our large, beautiful ballroom<br><br>10:15pm-10:30pm FREE performances by our students and instructors.
+  - date: 4/18/2019
+    name: Closed!
+    content: Sorry everyone, but we'll be closed on April 18th as The Russian Center prepares for a weekend of Easter celebrations.
+    hide: False
+  - date: 4/11/2019
+    name: Live music with Dandy Wellington!
+    content: Dandy Wellington and His Band are joining us LIVE on Thurday, 4/11/19. Tickets are sold at the door only. $15 general admission / $12 full-time students, seniors 60+, military.
+    hide: False
+  - date: 2/8/2019
+    name: February series started January 31st!
+    content: 'If you missed class last week, here are your options: Level 1 - you can take the Taster Class at 9:30pm and join the next series starting March 7th. Level 2, Level 3, Solo Jazz - If you’re a returning student, we’ll make an exception because of the funky schedule and allow you to join starting this week as long as you watch the recap videos from our <a href="https://www.youtube.com/user/920Special">YouTube channel</a> from last week’s class. Email info@920special.com with questions.'
+    hide: False
+  - date: 2/28/2019
+    name: Closed for the annual Russian Festival
+    content: We'll be closed on the last Thursday in February, the 28th, for the Russian Center's annual Russian Festival. February series classes end on February 21st.
+    hide: False
+  - date: 1/31/2019
+    name: February series begins January 31st!
+    content: Our February series begins a week early on January 31st and runs until February 21st. We'll be closed on February 28th because of the annual Russian Festival.
+    hide: False
+  - date: 1/24/2019
+    name: Four-Week January series
+    content: Happy New Year! Our January series begins January 3rd. While there are actually five Thursdays in January, the last class in the January series is on the 24th.
+    hide: False
   - date: 11/30/2017
     name: DJ Theme Night - Duke Ellington Through the Ages
     content: With a career spanning more than 50 years, Duke Ellington was one of the 20th century's most prolific song writers and artists. Join DJs Allen Kerr and Justin Hill for a journey through some of the swinginest tunes from Dukes songbook.

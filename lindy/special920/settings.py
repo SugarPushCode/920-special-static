@@ -23,6 +23,9 @@ from django_jinja.backend import Jinja2
 from django_jinja.builtins import DEFAULT_EXTENSIONS
 from path import Path
 
+# disable admin site by default
+ADMIN_ENABLED = False
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = (Path(__file__).dirname() / '..').abspath()
@@ -56,13 +59,12 @@ INSTALLED_APPS = [
     # 'djangobower',
 ]
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -92,19 +94,19 @@ TEMPLATES = [
             ],
         }
     },
-    # {
-    #     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    #     'DIRS': [],
-    #     'APP_DIRS': True,
-    #     'OPTIONS': {
-    #         'context_processors': [
-    #             'django.template.context_processors.debug',
-    #             'django.template.context_processors.request',
-    #             'django.contrib.auth.context_processors.auth',
-    #             'django.contrib.messages.context_processors.messages',
-    #         ],
-    #     },
-    # },
+     {
+         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+         'DIRS': [],
+         'APP_DIRS': True,
+         'OPTIONS': {
+             'context_processors': [
+                 'django.template.context_processors.debug',
+                 'django.template.context_processors.request',
+                 'django.contrib.auth.context_processors.auth',
+                 'django.contrib.messages.context_processors.messages',
+             ],
+         },
+     },
 ]
 
 WSGI_APPLICATION = 'lindy.special920.wsgi.application'
@@ -194,18 +196,18 @@ STATIC_ROOT = PROJECT_ROOT / 'static'
 HACK_DB = yaml.load(open(PROJECT_ROOT / 'data.yml'))
 
 class_desc_dict = {
-    'Lindy 1A': '6-count + 8-count',
-    'Lindy 1B': '8-count + Charleston',
-    'Lindy 1C': '6-count + Charleston',
-    'Lindy 2A': 'Swingouts',
-    'Lindy 2B': 'Musicality',
-    'Lindy 2C': 'Charleston',
-    'Lindy 2D': 'Classics',
-    'Lindy 3A': 'Technique',
-    'Lindy 3B': 'Musicality',
-    'Lindy 3C': 'Beyond Lindy Hop',
-    'Lindy 3D': 'Vocabulary',
-    'Lindy 3P': 'Performance Class',
+    'Level 1A': '6-count + 8-count',
+    'Level 1B': '8-count + Charleston',
+    'Level 1C': '6-count + Charleston',
+    'Level 2A': 'Swingouts',
+    'Level 2B': 'Musicality',
+    'Level 2C': 'Charleston',
+    'Level 2D': 'Classics',
+    'Level 3A': 'Technique',
+    'Level 3B': 'Musicality',
+    'Level 3C': 'Beyond Lindy Hop',
+    'Level 3D': 'Vocabulary',
+    'Level 3P': 'Performance Class',
 }
 
 with open('teacher_schedule.csv') as schedule:
@@ -227,7 +229,7 @@ with open('teacher_schedule.csv') as schedule:
                     value = '0' + value
                 TEACHER_SCHEDULE[value] = d
             else:
-                # eg. Lindy 1@7:20
+                # eg. Level 1@7:20
                 name, time = key.split('@')
 
                 # In the instructor field of the CSV file,
@@ -236,7 +238,7 @@ with open('teacher_schedule.csv') as schedule:
                 if ':' in value:
                     section, value = value.split(':')
 
-                    # 'Lindy 1A'
+                    # 'Level 1A'
                     class_name = name + section
 
                     # Look up the description in the dictionary
@@ -251,5 +253,6 @@ with open('teacher_schedule.csv') as schedule:
 SENDGRID_PASSWORD = environ.get('SENDGRID_PASSWORD')
 SENDGRID_USERNAME = environ.get('SENDGRID_USERNAME')
 
+GOOGLE_RECAPTCHA_SECRET_KEY = environ.get('GOOGLE_RECAPTCHA_SECRET_KEY')
 CONTACT_EMAIL = 'info@920special.com'
 DEBUG_EMAIL = environ.get('DEBUG_EMAIL')

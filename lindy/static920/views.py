@@ -3,7 +3,6 @@ from __future__ import absolute_import
 # Standard Library
 from datetime import (
     datetime,
-    timedelta,
 )
 from calendar import monthrange
 from textwrap import dedent

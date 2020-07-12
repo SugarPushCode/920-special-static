@@ -199,6 +199,12 @@
         <h2>Contact Us</h2>
       </header>
       <section>
+      <script src="https://www.google.com/recaptcha/api.js?render=6Letkb4UAAAAAAcco7roJGxilTzDE1dX8HGDjVqo"></script>
+      <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Letkb4UAAAAAAcco7roJGxilTzDE1dX8HGDjVqo', {action: 'feedback_form'});
+      });
+      </script>
         <form class="row align-right" method="POST" action="/contact/?next=/about.html#contact">
           <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
           <div class="column small-12 medium-6 large-4">
